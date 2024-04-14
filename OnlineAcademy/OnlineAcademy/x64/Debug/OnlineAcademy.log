@@ -1,6 +1,8 @@
 ﻿  OnlineAcademy.cpp
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(86,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(93,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(106,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(113,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  OnlineAcademy.vcxproj -> C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(86,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(93,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(106,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(113,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(316,42): warning C4566: character represented by universal-character-name '\u00E8' cannot be represented in the current code page (1251)
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\OnlineAcademy.cpp(316,42): warning C4566: character represented by universal-character-name '\u00E9' cannot be represented in the current code page (1251)
+  OnlineAcademy.vcxproj -> C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe

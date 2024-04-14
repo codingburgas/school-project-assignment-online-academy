@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
@@ -244,6 +244,7 @@ bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<st
 
 void menu(std::vector<std::string> menuOptions)
 {
+
     int selectedOption = 0; // By default when you open the app you are hovering at the first menu option
     char pressedKey = ' ';
     bool exitStatement = true;
@@ -282,13 +283,94 @@ void menu(std::vector<std::string> menuOptions)
                 // Learn
             case 0:
                 system("CLS");
-                std::cout << "Learning mode selected." << std::endl;
-                displayMenu = false;
-                pressedKey = _getch();
-                if (pressedKey == 27)
+
+                std::cout << "Choose Grade:" << std::endl;
+                std::cout << "1.9th Grade" << std::endl;
+                std::cout << "2.10th Grade" << std::endl;
+
+                int yourGradeOption;
+                std::cin >> yourGradeOption;
+
+                if (yourGradeOption == 1)
                 {
-                    displayMenu = true;
+                    system("CLS");
+                    std::vector<std::string> subjects = { "Bulgarian", "Biology", "Chemistry", "History", "Physics" };
+                    std::cout << "Choose a Subject: " << std::endl;
+
+                    for (size_t i = 0; i < subjects.size(); i++)
+                    {
+                        std::cout << i + 1 << "." << subjects[i] << std::endl;
+                    }
+
+                    int subjectChoice;
+                    std::cin >> subjectChoice;
+                    if (subjectChoice >= 1 && subjectChoice <= static_cast<int>(subjects.size()))
+                    {
+                        system("CLS");
+                        if (subjectChoice == 1)
+                        {
+                            std::cout << "Revision about " << subjects[subjectChoice - 1] << ":\n";
+                            std::cout << "1.Gulliver's Travels - Satire, Jonathan Swift" << std::endl;
+                            std::cout << "2.Don Juan - 	Epic poem and satire, Don Juan" << std::endl;
+                            std::cout << "3.Eugene Onegin - Pushkin sonnet, Alexander Pushkin" << std::endl;
+                            std::cout << "4.Père Goriot - Novel, Honoré de Balzac" << std::endl;
+                            std::cout << "5.Madame Bovary - Novel, Gustave Flaubert" << std::endl;
+                            std::cout << "6.Istoriya Slavyanobolgarskaya - Historiography, Paisius of Hilendar" << std::endl;
+                        }
+                        if (subjectChoice == 2)
+                        {
+                            std::cout << "Biology Revision" << std::endl;
+                            std::cout << "1. Proteins are made up of amino acids" << std::endl;
+                            std::cout << "2. Enzymes change the rate of biochemical reactions" << std::endl;
+                            std::cout << "3. Polysaccharides are a type of carbohydrate" << std::endl;
+                            std::cout << "4. All bacteria are prokaryotic" << std::endl;
+                            std::cout << "5. Ribosomes consist of RNA and proteins" << std::endl;
+                            std::cout << "6. Lysosomes contain digestive enzymes" << std::endl;
+
+                        }
+                        if (subjectChoice == 3)
+                        {
+                            std::cout << "Chemistry Revision" << std::endl;
+
+
+                        }
+                        if (subjectChoice == 4)
+                        {
+                            std::cout << "History Revision" << std::endl;
+                        }
+                        if (subjectChoice == 5)
+                        {
+                            std::cout << "Physics Revision" << std::endl;
+                        }
+
+
+                        std::cout << "\nPress any key to return to Study Set...";
+                        _getch();
+                        system("CLS");
+                        menu(menuOptions);
+                    }
+                    else
+                    {
+                        std::cout << "Invalid choice. Returning to main menu.\n";
+                        system("CLS");
+                        menu(menuOptions);
+                    }
                 }
+                else if (yourGradeOption == 2)
+                {
+                    std::cout << "10th grade options\n";
+                    std::cout << "\nPress any key to return to Main Menu...";
+                    _getch();
+                    system("CLS");
+                    menu(menuOptions);
+                }
+                else
+                {
+                    std::cout << "Invalid choice. Returning to main menu.\n";
+                    system("CLS");
+                    menu(menuOptions);
+                }
+
                 // Implement learning mode functionality
                 break;
 
@@ -384,6 +466,6 @@ int main()
 
     system("CLS");
 
-    std::vector<std::string> menuOptions = { "LEARN", "Start test", "Information", "Grades", "Exit" };
+    std::vector<std::string> menuOptions = { "Revision", "Start test", "Information", "Grades", "Exit" };
     menu(menuOptions);
 }

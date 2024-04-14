@@ -4,7 +4,10 @@ ivana 0
 y 5
 y 5
 y 5
-viki 0
+viki 10
 y 5
 y 5
 yana 6
+nina 0
+dani 0
+alex 10
