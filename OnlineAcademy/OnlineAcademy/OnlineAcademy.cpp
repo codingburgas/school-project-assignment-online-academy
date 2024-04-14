@@ -283,6 +283,12 @@ void menu(std::vector<std::string> menuOptions)
             case 0:
                 system("CLS");
                 std::cout << "Learning mode selected." << std::endl;
+                displayMenu = false;
+                pressedKey = _getch();
+                if (pressedKey == 27)
+                {
+                    displayMenu = true;
+                }
                 // Implement learning mode functionality
                 break;
 
@@ -303,6 +309,12 @@ void menu(std::vector<std::string> menuOptions)
                 system("CLS");
                 std::cout << "Displaying information..." << std::endl;
                 // Implement the information display functionality
+                displayMenu = false;
+                pressedKey = _getch();
+                if (pressedKey == 27)
+                {
+                    displayMenu = true;
+                }
                 break;
 
                 // Grades
