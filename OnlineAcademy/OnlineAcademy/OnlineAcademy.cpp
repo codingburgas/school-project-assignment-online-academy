@@ -331,16 +331,36 @@ void menu(std::vector<std::string> menuOptions)
                         if (subjectChoice == 3)
                         {
                             std::cout << "Chemistry Revision" << std::endl;
+                            std::cout << "1.A substance that is made up of only one type of particle describes Pure Substance" << std::endl;
+                            std::cout << "2.A characteristic of a substance that can be determined without changing the composition of the substance is Physical property" << std::endl;
+                            std::cout << "3.In an ATOM,Number of electrons = Number of protons" << std::endl;
+                            std::cout << "4.Atomic Mass consists of Neutrons + protons" << std::endl;
+                            std::cout << "5.All elements in Group 1 (Alkali Metals) have an ionic charge of 1" << std::endl;
+                            std::cout << "6An element that is malleable, conducts heat, ductile and generally a solid at room temperature is metal" << std::endl;
 
 
                         }
                         if (subjectChoice == 4)
                         {
                             std::cout << "History Revision" << std::endl;
+                            std::cout << "1.English Bill of Rights was a list of parliament's right and the English people's rights" << std::endl;
+                            std::cout << "2.World War First started in 1914." << std::endl;
+                            std::cout << "3.The end of the USSR was in 1991" << std::endl;
+                            std::cout << "4.The Second World War began in 1939" << std::endl;
+                            std::cout << "5.The April Uprising began in 1876" << std::endl;
+                            std::cout << "6.The end of the First World War was in 1918" << std::endl;
                         }
                         if (subjectChoice == 5)
                         {
+ 
                             std::cout << "Physics Revision" << std::endl;
+                            std::cout << "1.When two objects try to pull each other this is Gravitational Force" << std::endl;
+                            std::cout << "2.Who discovered Gravity? - Isaac Newton" << std::endl;
+                            std::cout << "3.Force is the ratio of acceleration and mass" << std::endl;
+                            std::cout << "4.What makes mass different from weight? - Gravity" << std::endl;
+                            std::cout << "5.The value of Gravity here on Earth - 9.8 m/s²" << std::endl;
+                            std::cout << "6.Define conductor a substance in which electrons can move freely from one atom to another" << std::endl;
+
                         }
 
 

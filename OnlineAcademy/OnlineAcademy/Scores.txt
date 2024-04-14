@@ -11,3 +11,4 @@ yana 6
 nina 0
 dani 0
 alex 10
+gigi 0
