@@ -4,12 +4,12 @@
 <img width = "400" alt="logo" src="Documentation/logo.png">
 
 ## 🏢 Our team
-<p><a href="https://github.com/VDChavdarova21">Victoria Kupenova</a> - Scrum Trainer</p>
+<p><a href="https://github.com/VDChavdarova21">Viкtoria Kupenova</a> - Scrum Trainer</p>
 <p><a href="https://github.com/YZIlcheva21">Yana Ilcheva</a> - Back-end Developer</p>
 <p><a href="https://github.com/RDNikolov22">Rostislav Nikolov</a> - Back-end Developer</p>
 <p><a href="https://github.com/MSBakumtseva22">Мaria Bakumtseva</a> - Back-end Developer</p>
 <p><a href="https://github.com/AAPopova22">Arina Popova</a> - Back-end Developer</p>
-<p><a href="https://github.com/AMZheleva21">Alexsandra Zheleva</a> - QA Developer</p>
+<p><a href="https://github.com/AMZheleva21">Alexandra Zheleva</a> - QA Developer</p>
 
 ## 📋 Description of the game
 ### Our team made an app, that is like an online school. Through it, you can first read information on the various subjects and then take a test to check the knowledge you have already learned.
