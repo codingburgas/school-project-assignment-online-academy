@@ -1,11 +1,11 @@
 # Online Academy
 <p align="center">
 
-<img width = "400" alt="logo" src="">
+<img width = "400" alt="logo" src="Documentation/logo.png">
 
 ## 🏢 Our team
 <p><a href="https://github.com/VDChavdarova21">Victoria Kupenova</a> - Scrum Trainer</p>
-<p><a href="https://github.com/YZIlcheva21">Qna Ilcheva</a> - Back-end Developer</p>
+<p><a href="https://github.com/YZIlcheva21">Yana Ilcheva</a> - Back-end Developer</p>
 <p><a href="https://github.com/RDNikolov22">Rostislav Nikolov</a> - Back-end Developer</p>
 <p><a href="https://github.com/MSBakumtseva22">Мaria Bakumtseva</a> - Back-end Developer</p>
 <p><a href="https://github.com/AAPopova22">Arina Popova</a> - Back-end Developer</p>
