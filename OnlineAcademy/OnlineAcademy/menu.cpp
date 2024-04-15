@@ -5,9 +5,33 @@
 void startingScreen()
 {
     Student student;
-    std::cout << "Enter your name before starting the quiz: ";
+    std::cout << "\n\n\t" << std::setfill('-') << std::setw(112) << "-" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t" << "      _\t\t\t\t\t\t\t\t     / |" << std::endl;
+    std::cout << "\t| \\\t\t\t   __      __   ___  | |   ___    ___    _ __ ___     ___  \t\t\t     \\ |" <<      std::endl;
+    std::cout << "\t| /\t\t\t   \\ \\ /\\ / /  / _ \\ | |  / __|  / _ \\  | '_ ` _ \\   / _ \\ \t\t\t     / |" << std::endl;
+    std::cout << "\t| \\\t\t\t    \\ V  V /  |  __/ | | | (__  | (_) | | | | | | | |  __/ \t\t\t     \\ |" <<     std::endl;
+    std::cout << "\t| /\t\t\t     \\_/\\_/    \\___| |_|  \\___|  \\___/  |_| |_| |_|  \\___| \t\t\t     / |" <<  std::endl;
+    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" <<   std::endl;
+    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" <<   std::endl;
+    std::cout << "\t| \\\t\t\t" << std::endl;
+    std::cout << "\t| /\t\t\t\tEnter your name before starting the quiz :"  ;
     std::cin >> student.name;
+    std::cout << "\t| \\" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
+    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
+    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
+    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
+    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
+    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
+    std::cout << "\t" << std::setw(112) << "-" << std::endl;
+    
 
+  
     Student existingStudent;
     if (findStudent(student.name, existingStudent))
     {
@@ -45,7 +69,11 @@ void startingScreen()
 
     std::vector<std::string> menuOptions = { "Revision", "Start test", "Information", "Grades", "Exit" };
     menu(menuOptions);
+
+    
 }
+
+
 
 void outputPosition(int x, int y)
 {
@@ -433,4 +461,6 @@ void menu(std::vector<std::string> menuOptions)
             }
         }
     }
+
+    
 }
