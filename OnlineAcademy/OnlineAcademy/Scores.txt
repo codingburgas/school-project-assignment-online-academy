@@ -12,3 +12,5 @@ nina 0
 dani 0
 alex 10
 gigi 0
+tedi 0
+reni 0
