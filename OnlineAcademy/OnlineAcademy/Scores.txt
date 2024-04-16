@@ -10,10 +10,11 @@ y 5
 yana 6
 nina 0
 ani 20
-alex 10
+alex 12
 gigi 0
 tedi 0
 reni 0
 qna 7
 std::cout 0
 meni 0
+alex 0

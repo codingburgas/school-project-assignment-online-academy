@@ -332,58 +332,49 @@ void menu(std::vector<std::string> menuOptions)
                         system("CLS");
                         if (subjectChoice == 1)
                         {
-                            std::cout << "Revision about " << subjects[subjectChoice - 1] << ":\n";
-                            std::cout << "1.Gulliver's Travels - Satire, Jonathan Swift" << std::endl;
-                            std::cout << "2.Don Juan - 	Epic poem and satire, Don Juan" << std::endl;
-                            std::cout << "3.Eugene Onegin - Pushkin sonnet, Alexander Pushkin" << std::endl;
-                            std::cout << "4.Père Goriot - Novel, Honoré de Balzac" << std::endl;
-                            std::cout << "5.Madame Bovary - Novel, Gustave Flaubert" << std::endl;
-                            std::cout << "6.Istoriya Slavyanobolgarskaya - Historiography, Paisius of Hilendar" << std::endl;
+                            std::cout << "Revision about " << subjects[subjectChoice - 1] << std::endl;
+                            std::cout << "In 1726, Jonathan Swift published his book Travels in Various Countries of the World, in four parts. By Lemuel Gulliver,first a physician," << std::endl;
+                            std::cout << "and afterwards captain of several ships.In 1735, the edition took its final form and consisted of Captain Gulliver's Letter to his Cousin Simpson, a Publisher's Preface, " << std::endl;
+                            std::cout << "and four chapters.The author began writing the Voyages in 1721, influenced by the great success of Daniel Defoe's novel Robinson Crusoe. In many ways, Gulliver can" << std::endl;
+                            std::cout << "be considered a parody of Robinson Crusoe.The book ridicules the diaristic adventure literature developed during the Renaissance, of which Robinson Crusoe was the pinnacle."   << std::endl;
                         }
                         if (subjectChoice == 2)
                         {
-                            std::cout << "Biology Revision" << std::endl;
-                            std::cout << "1. Proteins are made up of amino acids" << std::endl;
-                            std::cout << "2. Enzymes change the rate of biochemical reactions" << std::endl;
-                            std::cout << "3. Polysaccharides are a type of carbohydrate" << std::endl;
-                            std::cout << "4. All bacteria are prokaryotic" << std::endl;
-                            std::cout << "5. Ribosomes consist of RNA and proteins" << std::endl;
-                            std::cout << "6. Lysosomes contain digestive enzymes" << std::endl;
+                            std::cout << "Revision about Biology" << std::endl;
+                            std::cout << "Mitosis consists of four main phases: prophase, metaphase, anaphase and telophase. Some textbooks describe" << std::endl;
+                            std::cout << "five, dividing prophase into an early phase (called prophase) and a late phase (called prometaphase). " << std::endl;
+                            std::cout << "These phases occur in a strictly sequential order, and cytokinesis-the process of dividing the contents " << std::endl;
+                            std::cout << "of cells to build two new cells-begins during anaphase or telophase." << std::endl;
 
                         }
                         if (subjectChoice == 3)
                         {
-                            std::cout << "Chemistry Revision" << std::endl;
-                            std::cout << "1.A substance that is made up of only one type of particle describes Pure Substance" << std::endl;
-                            std::cout << "2.A characteristic of a substance that can be determined without changing the composition of the substance is Physical property" << std::endl;
-                            std::cout << "3.In an ATOM,Number of electrons = Number of protons" << std::endl;
-                            std::cout << "4.Atomic Mass consists of Neutrons + protons" << std::endl;
-                            std::cout << "5.All elements in Group 1 (Alkali Metals) have an ionic charge of 1" << std::endl;
-                            std::cout << "6An element that is malleable, conducts heat, ductile and generally a solid at room temperature is metal" << std::endl;
+                            std::cout << "Revision about Chemistry " << std::endl;
+                            std::cout << "Atoms are the smallest units of matter that retain the basic chemical properties of the elements.. Much of what we study " << std::endl;
+                            std::cout << "in chemistry involves what happens when atoms bond with other atoms to form compounds. A compound is a distinct group " << std::endl;
+                            std::cout << "of atoms that are joined by chemical bonds. Just as the structure of an atom is maintained by the electrostatic " << std::endl;
+                            std::cout << "attraction between the positively charged nucleus and the negatively charged electrons around it, stability in chemical " << std::endl;
+                            std::cout << "bonds is also due to electrostatic attractions. To show this, we will consider the two main types of chemical bonds : covalent and ionic bonds. " << std::endl;
+                            std::cout << "In covalent bonds, two atoms share pairs of electrons, while in ionic bonds the shared electron pair is completely transferred from one atom to the other, forming ions. " << std::endl;
 
 
                         }
                         if (subjectChoice == 4)
                         {
-                            std::cout << "History Revision" << std::endl;
-                            std::cout << "1.English Bill of Rights was a list of parliament's right and the English people's rights" << std::endl;
-                            std::cout << "2.World War First started in 1914." << std::endl;
-                            std::cout << "3.The end of the USSR was in 1991" << std::endl;
-                            std::cout << "4.The Second World War began in 1939" << std::endl;
-                            std::cout << "5.The April Uprising began in 1876" << std::endl;
-                            std::cout << "6.The end of the First World War was in 1918" << std::endl;
+                            std::cout << "Revision about History " << std::endl;
+                            std::cout << "1939 The beginning of World War II The beginning of the war finds Bulgaria in a relatively stable authoritarian regime, which tries to maintain neutrality " << std::endl;
+                            std::cout << "by maneuvering between Nazi Germany ,the Western powers and the USSR. February 1940 Tsar Boris III appoints a new government" << std::endl;
+                            std::cout << "Tsar Boris III appoints a new government headed by Prof. Bogdan Filov. The composition of this cabinet is a benevolent gesture towards the Reich (Nazi Germany)." << std::endl;
+                            std::cout << "7 September 1940 | Signing of the Craiova Agreement Bulgaria and Romania sign the Treaty of Craiova, by which Southern Dobrudzha is returned to Bulgaria " << std::endl;
                         }
                         if (subjectChoice == 5)
                         {
 
-                            std::cout << "Physics Revision" << std::endl;
-                            std::cout << "1.When two objects try to pull each other this is Gravitational Force" << std::endl;
-                            std::cout << "2.Who discovered Gravity? - Isaac Newton" << std::endl;
-                            std::cout << "3.Force is the ratio of acceleration and mass" << std::endl;
-                            std::cout << "4.What makes mass different from weight? - Gravity" << std::endl;
-                            std::cout << "5.The value of Gravity here on Earth - 9.8 m/s²" << std::endl;
-                            std::cout << "6.Define conductor a substance in which electrons can move freely from one atom to another" << std::endl;
-
+                            std::cout << "Revision about Physics " << std::endl;
+                            std::cout << "The notion of electricity stems from observation of nature. We observe the action of a force between bodies which, , like gravity, acts from a distance." << std::endl;
+                            std::cout << "The source of this force is given the name charge. A very remarkable feature of the electric force force is that it is large, much more powerful than " << std::endl;
+                            std::cout << "the force of gravity. Unlike gravity, however, there are two kinds of electric charge. Different charges attract each other and the same charges repel " << std::endl;
+                            std::cout << "each other. Gravity always attracts and never repels." << std::endl;
                         }
 
 
@@ -401,7 +392,7 @@ void menu(std::vector<std::string> menuOptions)
                 }
                 else if (yourGradeOption == 2)
                 {
-                    std::cout << "10th grade options\n";
+                    std::cout << "Revision" << std::endl;
                     std::cout << "\nPress any key to return to Main Menu...";
                     _getch();
                     system("CLS");

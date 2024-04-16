@@ -1,9 +1,6 @@
 ﻿  menu.cpp
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(104,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(111,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(124,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(131,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(334,42): warning C4566: character represented by universal-character-name '\u00E8' cannot be represented in the current code page (1251)
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(334,42): warning C4566: character represented by universal-character-name '\u00E9' cannot be represented in the current code page (1251)
-C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(379,42): warning C4566: character represented by universal-character-name '\u00B2' cannot be represented in the current code page (1251)
-  OnlineAcademy.vcxproj -> C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(106,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(113,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(127,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(134,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  OnlineAcademy.vcxproj -> C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
