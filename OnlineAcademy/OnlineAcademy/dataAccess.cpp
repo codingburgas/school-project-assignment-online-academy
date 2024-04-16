@@ -1,6 +1,6 @@
 #include "dataAccess.h"
 
-
+// Function to find a student by name in the Scores.txt file
 bool findStudent(const std::string& name, Student& student)
 {
     std::ifstream file("Scores.txt");
@@ -17,6 +17,7 @@ bool findStudent(const std::string& name, Student& student)
     return false;
 }
 
+// Function to update a student's score in the Scores.txt file
 void updateStudent(const Student& student)
 {
     std::ifstream file("Scores.txt");
