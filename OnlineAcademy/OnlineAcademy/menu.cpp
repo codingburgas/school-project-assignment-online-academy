@@ -5,48 +5,26 @@
 void startingScreen()
 {
     Student student;
-    std::cout << "\n\n\t" << std::setfill('-') << std::setw(112) << "-" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t" << "      _\t\t\t\t\t\t\t\t     / |" << std::endl;
-    std::cout << "\t| \\\t\t\t   __      __   ___  | |   ___    ___    _ __ ___     ___  \t\t\t     \\ |" <<      std::endl;
-    std::cout << "\t| /\t\t\t   \\ \\ /\\ / /  / _ \\ | |  / __|  / _ \\  | '_ ` _ \\   / _ \\ \t\t\t     / |" << std::endl;
-    std::cout << "\t| \\\t\t\t    \\ V  V /  |  __/ | | | (__  | (_) | | | | | | | |  __/ \t\t\t     \\ |" <<     std::endl;
-    std::cout << "\t| /\t\t\t     \\_/\\_/    \\___| |_|  \\___|  \\___/  |_| |_| |_|  \\___| \t\t\t     / |" <<  std::endl;
-    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" <<   std::endl;
-    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" <<   std::endl;
-    std::cout << "\t| \\\t\t\t" << std::endl;
-    std::cout << "\t| /\t\t\t\tEnter your name before starting the quiz :"  ;
-    std::cin >> student.name;
-    std::cout << "\t| \\" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
-    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
-    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
-    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
-    std::cout << "\t| \\\t\t\t\t\t\t\t\t\t\t\t\t\t     \\ |" << std::endl;
-    std::cout << "\t| /\t\t\t\t\t\t\t\t\t\t\t\t\t     / |" << std::endl;
-    std::cout << "\t" << std::setw(112) << "-" << std::endl;
+    std::cout << "\t\t\t\t __    __    ___  _         __   ___   ___ ___    ___ " << std::endl;
+    std::cout << "\t\t\t\t|  |__|  |  /  _|| |       /  | /   \\ |   Y   T  /  _|" << std::endl;
+    std::cout << "\t\t\t\t|  |  |  | /  |_ | |      /  / /     \\| _   _ | /  |_ " << std::endl;
+    std::cout << "\t\t\t\t|  |  |  |/    _|| l___  /  /  |  O  ||  \\_/  |/    _|" << std::endl;
+    std::cout << "\t\t\t\tY  `  '  l|   |_ |     |/   \\_ |     ||   |   ||   |_ " << std::endl;
+    std::cout << "\t\t\t\t \\      / |     ||     |\\     |\\     /|   |   ||     |" << std::endl;
+    std::cout << "\t\t\t\t  \\_/\\_/  l_____jl_____j \\____j \\___/ l___j___jl_____j" << std::endl;
     
-
+    std::cout << "\n\n\n\t\t\t\t    Enter your name before starting the quiz:"  ;
+    std::cin >> student.name;
   
     Student existingStudent;
     if (findStudent(student.name, existingStudent))
     {
         char choice;
-        std::cout << "This name is already used. Is that you? (y/n): ";
+        std::cout << "\n\n\t\t\t\t    This name is already used. Is that you? (y/n): ";
         std::cin >> choice;
-        if (choice == 'y' || choice == 'Y')
+        if (choice == 'n' || choice == 'N')
         {
-            std::cout << "Enter your new score: ";
-            std::cin >> student.score;
-            updateStudent(student);
-        }
-        else
-        {
-            std::cout << "Please choose a different name." << std::endl;
+            std::cout << "\n\n\t\t\t\t    Please choose a different name:";
             std::cin >> student.name;
 
             std::ofstream myfile("Scores.txt", std::ios::app);
@@ -66,11 +44,18 @@ void startingScreen()
     }
 
     system("CLS");
+    
 
     std::vector<std::string> menuOptions = { "Revision", "Start test", "Information", "Grades", "Exit" };
     menu(menuOptions);
 
-    
+    std::cout << " ___ ___   ____  ____  ____       ___ ___    ___  ____   __ __ " << std::endl;
+    std::cout << "|   T   | /    Tl    j|    \\     |   T   |  /  _]|    \\ |  T  |" << std::endl;
+    std::cout << "| _   _ |/  o  | |  | |  _  \\    | _   _ | /  [_ |  _  \\|  |  |" << std::endl;
+    std::cout << "|  \\_/  ||     | |  | |  |  |    |  \\_/  |/    _]|  |  ||  |  |" << std::endl;
+    std::cout << "|   |   ||  _  | |  | |  |  |    |   |   ||   [_ |  |  ||  |  |" << std::endl;
+    std::cout << "|   |   ||  |  | j  l |  |  |    |   |   ||     ||  |  |l     |" << std::endl;
+    std::cout << "l___j___jl__j__j|____jl__|__j    l___j___jl_____jl__j__j \\__,_j" << std::endl;
 }
 
 
@@ -84,6 +69,7 @@ void outputPosition(int x, int y)
     {
         return;
     }
+
 }
 
 // Function to change text color in the console window
@@ -98,6 +84,7 @@ void color(int color)
 // Function to print the main menu options
 void printMenuOptions(std::vector<std::string> menuOptions, int selectedOption)
 {
+
     for (size_t i = 0; i < menuOptions.size(); i++)
     {
         // Print arrow before selected option
@@ -119,6 +106,7 @@ void printMenuOptions(std::vector<std::string> menuOptions, int selectedOption)
 // Function to print the submenu options
 void printSubMenuOptions(std::vector<std::string> subMenuOptions, int selectedOption)
 {
+
     for (size_t i = 0; i < subMenuOptions.size(); ++i)
     {
         // Print arrow before selected option
@@ -146,8 +134,7 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
     system("CLS"); // Clear the screen
 
     printSubMenuOptions(subMenuStartTestOptions, selectedOption);
-
-    while (true)
+    
     {
         pressedKey = _getch();
 
@@ -164,7 +151,7 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
         }
 
         system("CLS"); // Clear the screen
-
+        
         printSubMenuOptions(subMenuStartTestOptions, selectedOption);
 
         // Choosing submenu option
@@ -197,12 +184,18 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
 }
 
 // Function to handle the "Grades" submenu
+
+
 bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<std::string> menuOptions)
 {
+        
+
     int selectedOption = 0;
     char pressedKey = ' ';
 
     system("CLS"); // Clear the screen
+        
+
 
     printSubMenuOptions(subMenuGradesOptions, selectedOption);
 
@@ -223,7 +216,7 @@ bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<st
         }
 
         system("CLS"); // Clear the screen
-
+        
         printSubMenuOptions(subMenuGradesOptions, selectedOption);
 
         // Choosing submenu option
@@ -267,7 +260,7 @@ bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<st
 // Function to display the main menu and handle user input
 void menu(std::vector<std::string> menuOptions)
 {
-
+    
     int selectedOption = 0; // By default when you open the app you are hovering at the first menu option
     char pressedKey = ' ';
     bool exitStatement = true;
@@ -306,24 +299,39 @@ void menu(std::vector<std::string> menuOptions)
                 // Learn
             case 0:
                 system("CLS");
-
-                std::cout << "Choose Grade:" << std::endl;
-                std::cout << "1.9th Grade" << std::endl;
-                std::cout << "2.10th Grade" << std::endl;
-
+                std::cout << "\t\t\t\t\t _        ___   ____  ____   ____ " <<    std::endl;
+                std::cout << "\t\t\t\t\t| T      /  _] /    T|    \\ |    \\ " << std::endl;
+                std::cout << "\t\t\t\t\t| |     /  [_ /  o  ||  D  )|  _  \\" <<  std::endl;
+                std::cout << "\t\t\t\t\t| |___ /    _]|     ||    / |  |  |" <<   std::endl;
+                std::cout << "\t\t\t\t\t|     ||   [_ |  _  ||    \\ |  |  |" <<  std::endl;
+                std::cout << "\t\t\t\t\t|     ||     T|  |  ||  .  Y|  |  |" <<   std::endl;
+                std::cout << "\t\t\t\t\tl_____jl_____jl__j__jl__j\__jl__j__j" <<  std::endl;
+               
+                std::cout << "\n\n\t\t\t\t\t\t  Choose Grade:" << std::endl;
+                std::cout << "\t\t\t\t\t\t  1.9th Grade" << std::endl;
+                std::cout << "\t\t\t\t\t\t  2.10th Grade" << std::endl;
+                std::cout << "\t\t\t\t\t\t  ";
                 int yourGradeOption;
                 std::cin >> yourGradeOption;
 
                 if (yourGradeOption == 1)
                 {
                     system("CLS");
-                    std::vector<std::string> subjects = { "Bulgarian", "Biology", "Chemistry", "History", "Physics" };
-                    std::cout << "Choose a Subject: " << std::endl;
+                    std::cout << "\t\t\t\t\t _        ___   ____  ____   ____ " << std::endl;
+                    std::cout << "\t\t\t\t\t| T      /  _] /    T|    \\ |    \\ " << std::endl;
+                    std::cout << "\t\t\t\t\t| |     /  [_ /  o  ||  D  )|  _  \\" << std::endl;
+                    std::cout << "\t\t\t\t\t| |___ /    _]|     ||    / |  |  |" << std::endl;
+                    std::cout << "\t\t\t\t\t|     ||   [_ |  _  ||    \\ |  |  |" << std::endl;
+                    std::cout << "\t\t\t\t\t|     ||     T|  |  ||  .  Y|  |  |" << std::endl;
+                    std::cout << "\t\t\t\t\tl_____jl_____jl__j__jl__j\__jl__j__j" << std::endl;
+                    std::vector<std::string> subjects = { "Bulgarian", "Biology", "Chemistry", "History", "Physics    " };
+                    std::cout << "\n\n\t\t\t\t\tChoose a Subject: " << std::endl;
 
                     for (size_t i = 0; i < subjects.size(); i++)
                     {
-                        std::cout << i + 1 << "." << subjects[i] << std::endl;
+                        std::cout << "\t\t\t\t\t" << i + 1 << "." << subjects[i] << std::endl;
                     }
+                    std::cout << "\t\t\t\t\t";
 
                     int subjectChoice;
                     std::cin >> subjectChoice;
@@ -423,6 +431,13 @@ void menu(std::vector<std::string> menuOptions)
             // Information
             case 2:
                 system("CLS");
+                std::cout << "\t\t\t ____  ____    _____ ______  ____   __ __    __ ______  ____  ___   ____    _____" <<     std::endl;
+                std::cout << "\t\t\t|    ||    \\  / ___/|      ||    \\ |  T  T  /  |      ||    |/   \\ |    \\  / ___/" << std::endl;
+                std::cout << "\t\t\t |  | |  _  \\(   \\_ |      ||  D  )|  |  | /  /|      | |  |Y     Y|  _  \\(   \\_ " << std::endl;
+                std::cout << "\t\t\t |  | |  |  | \\__  ||_|  |_||    / |  |  |/  / |_|  |_| |  ||  O  ||  |  | \\__  |" <<   std::endl;
+                std::cout << "\t\t\t |  | |  |  | /  \\ |  |  |  |    \\ |  |  /   \\_  |  |   |  ||     ||  |  | /  \\ |" << std::endl;
+                std::cout << "\t\t\t |  | |  |  | \\    |  |  |  |  .  Y|     \\     | |  |   |  ||     !|  |  | \\    |" <<  std::endl;
+                std::cout << "\t\t\t|____|l__j__j  \\___j  l__j  l__j\\_j \\____j\\____j l__j  |____j\\___/ l__j__j  \\___j" << std::endl;
                 std::cout << "Displaying information..." << std::endl;
                 // Implement the information display functionality
                 displayMenu = false;
@@ -437,9 +452,20 @@ void menu(std::vector<std::string> menuOptions)
             case 3:
             {
                 system("CLS");
+                
+
                 std::vector<std::string> gradesOptions = { "Highest grade", "Students who passed the test", "Students who don't pass the test", "Back" };
                 system("CLS");
-                if (subMenuGrades(gradesOptions, menuOptions)) {
+                std::cout << "\t\t\t\t\t  ____  ____    ____  ___      ___  _____" << std::endl;
+                std::cout << "\t\t\t\t\t /    ||    \\  /    ||   \\    /  _]/ ___/" << std::endl;
+                std::cout << "\t\t\t\t\t|   __j|  D  )/  o  ||    \\  /  [_(   \\_ " << std::endl;
+                std::cout << "\t\t\t\t\t|  |  ||    / |     ||  D  \\/    _]\\__  |" << std::endl;
+                std::cout << "\t\t\t\t\t|  |_ ||    \\ |  _  ||     ||   [_ /  \\ |" << std::endl;
+                std::cout << "\t\t\t\t\t|     ||  .  Y|  |  ||     ||     |\\    |" << std::endl;
+                std::cout << "\t\t\t\t\tl_____jl__j\\_jl__|__|l_____jl_____| \\___j" << std::endl;
+
+                if (subMenuGrades(gradesOptions, menuOptions)) 
+                {
                     displayMenu = true; // Display main menu after returning from submenu
                 }
             }

@@ -1,6 +1,9 @@
 ﻿  menu.cpp
-C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(106,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(113,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(127,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(134,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  OnlineAcademy.vcxproj -> C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(93,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(100,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(115,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(122,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(308,30): warning C4129: '_': unrecognized character escape sequence
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(326,34): warning C4129: '_': unrecognized character escape sequence
+C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(184): warning C4715: 'subMenuStartTest': not all control paths return a value
+  OnlineAcademy.vcxproj -> C:\Users\VGKUpenova21\source\repos\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe

@@ -9,7 +9,7 @@ y 5
 y 5
 yana 6
 nina 0
-ani 20
+ani 6
 alex 12
 gigi 0
 tedi 0
@@ -18,3 +18,8 @@ qna 7
 std::cout 0
 meni 0
 alex 0
+gabi 5
+gabi 5
+ani 0
+gabir 0
+gsbi 0
