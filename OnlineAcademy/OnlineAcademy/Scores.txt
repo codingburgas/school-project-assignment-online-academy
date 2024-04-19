@@ -23,3 +23,6 @@ gabi 5
 ani 0
 gabir 0
 gsbi 0
+gabii 0
+y 0
+sisi 0
