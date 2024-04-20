@@ -1,5 +1,6 @@
 ﻿#include "menu.h"
 #include "dataAccess.h"
+#include "quiz.h"
 
 // Function to display the starting screen and handle user input for name entry and checking for existing students
 void startingScreen()
@@ -128,65 +129,45 @@ void printSubMenuOptions(std::vector<std::string> subMenuOptions, int selectedOp
 // Function to handle the "Start Test" submenu
 bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vector<std::string> menuOptions)
 {
-
     int selectedOption = 0;
     char pressedKey = ' ';
 
-    system("CLS"); // Clear the screen
-
-    printSubMenuOptions(subMenuStartTestOptions, selectedOption);
-    
-    {
-        pressedKey = _getch();
-
-        // Moving up through the submenu
-        if (selectedOption != 0 && pressedKey == (char)72)
-        {
-            selectedOption--;
-        }
-
-        // Moving down through the submenu
-        if (selectedOption != subMenuStartTestOptions.size() - 1 && pressedKey == (char)80)
-        {
-            selectedOption++;
-        }
-
-        system("CLS"); // Clear the screen
-        
+    while (true) {
+        system("CLS"); 
         printSubMenuOptions(subMenuStartTestOptions, selectedOption);
 
-        // Choosing submenu option
-        if (pressedKey == '\r')
-        {
-            switch (selectedOption)
-            {
-                // Option 1
+        pressedKey = _getch();
+
+        if (pressedKey == (char)72 && selectedOption > 0) {
+            selectedOption--; 
+        }
+        else if (pressedKey == (char)80 && selectedOption < subMenuStartTestOptions.size() - 1) {
+            selectedOption++; 
+        }
+
+        // Handle user selection
+        if (pressedKey == '\r') {
+            switch (selectedOption) {
             case 0:
                 system("CLS");
-                std::cout << "Option 1 selected." << std::endl;
+                quiz();
                 break;
-
-                // Option 2
             case 1:
                 system("CLS");
-                std::cout << "Option 2 selected." << std::endl;
+                quiz();
                 break;
-
-                // Back
             case 2:
                 system("CLS");
-                return true; // Return to main menu
-
+                return true; 
             default:
                 break;
             }
         }
     }
+    return false;
 }
 
 // Function to handle the "Grades" submenu
-
-
 bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<std::string> menuOptions)
 {
         
