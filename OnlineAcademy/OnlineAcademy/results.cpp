@@ -30,9 +30,9 @@ void write_student()
 	std::cin.get();
 }
 
-//***************************************************************
-//    	function to read all records from file
-//****************************************************************
+
+//function to read all records from file
+
 
 void display_all()
 {
@@ -58,9 +58,9 @@ void display_all()
 }
 
 
-//***************************************************************
-//    	function to display all students grade report
-//****************************************************************
+
+//function to display all students grade report
+
 
 void class_result()
 {

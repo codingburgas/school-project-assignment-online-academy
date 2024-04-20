@@ -653,7 +653,25 @@ void menu(std::vector<std::string> menuOptions)
                 std::cout << "\t\t\t |  | |  |  | /  \\ |  |  |  |    \\ |  |  /   \\_  |  |   |  ||     ||  |  | /  \\ |" << std::endl;
                 std::cout << "\t\t\t |  | |  |  | \\    |  |  |  |  .  Y|     \\     | |  |   |  ||     !|  |  | \\    |" << std::endl;
                 std::cout << "\t\t\t|____|l__j__j  \\___j  l__j  l__j\\_j \\____j\\____j l__j  |____j\\___/ l__j__j  \\___j" << std::endl;
-                std::cout << "Displaying information..." << std::endl;
+                std ::cout << std::endl;
+                std::cout << "\t\t\t   __________________________________________________________________" << std::endl;
+                std::cout << "\t\t\t / \\                             	                             \\." << std::endl;
+                std::cout << "\t\t\t|   |                                                                |." << std::endl;
+                std::cout << "\t\t\t \\_ |                                                                |." << std::endl;
+                std::cout << "\t\t\t    |                                                                |." << std::endl;
+                std::cout << "\t\t\t    | Hello, we are Online Academy and we made an app and 10-th grade|." << std::endl;
+                std::cout << "\t\t\t    | We know that they are so important and we wanted to help you.  |." << std::endl;
+                std::cout << "\t\t\t    | If you want to use our app here are the instructions.          |." << std::endl;
+                std::cout << "\t\t\t    | Firtsly go to Revision to revise for the forthcoming exams     |." << std::endl;
+                std::cout << "\t\t\t    | Then go to Test to take some tests, where you can choose       |." << std::endl;
+                std::cout << "\t\t\t    | if you want to take 9-th grade tests or 10-th grade tests      |." << std::endl;
+                std::cout << "\t\t\t    | After that you can go to Grades to see what is your grade      |." << std::endl;
+                std::cout << "\t\t\t    |                                                                |." << std::endl;
+                std::cout << "\t\t\t    |                                                                |." << std::endl;
+                std::cout << "\t\t\t    |                                                                |." << std::endl;
+                std::cout << "\t\t\t    |   _____________________________________________________________|." << std::endl;
+                std::cout << "\t\t\t    |  /                                                             /." << std::endl;
+                std::cout << "\t\t\t    \\_/_____________________________________________________________/." << std::endl;
                 // Implement the information display functionality
                 displayMenu = false;
                 pressedKey = _getch();
