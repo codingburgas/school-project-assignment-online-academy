@@ -29,4 +29,10 @@ sisi 0
 VIKI 0
 GABI 0
 hari 0
+<<<<<<< HEAD
 Rostislav 0
+=======
+yaa 0
+yaba 0
+yaan 0
+>>>>>>> 9759ee8e8214635f8dd591178eafccb9284c4da8

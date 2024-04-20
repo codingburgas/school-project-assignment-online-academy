@@ -454,13 +454,13 @@ void menu(std::vector<std::string> menuOptions)
                         std::cout << "\nPress any key to return to Study Set...";
                         _getch();
                         system("CLS");
-                        menu(menuOptions);
+                        displayMenu = true; 
                     }
                     else
                     {
                         std::cout << "Invalid choice. Returning to main menu.\n";
                         system("CLS");
-                        menu(menuOptions);
+                        displayMenu = true;
                     }
                 }
                 else if (yourGradeOption == 2)
@@ -616,14 +616,14 @@ void menu(std::vector<std::string> menuOptions)
                         std::cout << "\nPress any key to return to Main Menu...";
                         _getch();
                         system("CLS");
-                        menu(menuOptions);
+                        displayMenu = true;
                     }
                 }
                 else
                 {
                     std::cout << "Invalid choice. Returning to main menu.\n";
                     system("CLS");
-                    menu(menuOptions);
+                    displayMenu = true;
                 }
 
                 // Implement learning mode functionality

@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.34.31933:TargetPlatformVersion=10.0.22000.0:
 Debug|x64|C:\Users\user\Documents\school-project-assignment-online-academy\OnlineAcademy\|
+=======
+PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.31.31103:TargetPlatformVersion=10.0.19041.0:
+Debug|x64|C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\|
+>>>>>>> 9759ee8e8214635f8dd591178eafccb9284c4da8

@@ -1,2 +1,15 @@
+<<<<<<< HEAD
 ﻿  quiz_10grade.cpp
   OnlineAcademy.vcxproj -> C:\Users\user\Documents\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
+=======
+﻿  menu.cpp
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(96,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(103,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(118,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(125,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(299,30): warning C4129: '_': unrecognized character escape sequence
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(317,34): warning C4129: '_': unrecognized character escape sequence
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(476,34): warning C4129: '_': unrecognized character escape sequence
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(602,42): warning C4566: character represented by universal-character-name '\u03B3' cannot be represented in the current code page (1252)
+  OnlineAcademy.vcxproj -> C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
+>>>>>>> 9759ee8e8214635f8dd591178eafccb9284c4da8
