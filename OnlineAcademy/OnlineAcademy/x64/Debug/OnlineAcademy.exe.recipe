@@ -2,11 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
-      <FullPath>C:\Users\user\Documents\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe</FullPath>
-=======
-      <FullPath>C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe</FullPath>
->>>>>>> 9759ee8e8214635f8dd591178eafccb9284c4da8
+      <FullPath>C:\Users\Пользователь\Documents\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
