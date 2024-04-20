@@ -57,15 +57,26 @@ void quiz_10grade()
 	int right = 0;
 	int wrong = 0;
 	char answers;
-	struct question abc[6];
+	struct question abc[16];
 	int number = 0;
 
 
-	abc[0] = { "Whwing is not the characteristic of a class?","Generic","Friend","Inline","Inline",'c' };
-	abc[1] = { "Which of the following statements is most suitable for the C++ language?","Statically typed language.","Dynamically typed language.","All","Type-less language.",'a' };
-	abc[2] = { "Which of the following operators doesn’t allow overloading?","Comparison operator.","Assignment operator.","Scope resolution operator.","Dereference operator.",'c' };
-	abc[3] = { "Which of the following isn’t supported in C++ language?","Namespaces.","Inheritance","Reflection.","Polymorphism.",'c' };
-	abc[4] = { "Which of the following keywords can’t appear inside a class definition?","template","static","virtual","friend",'a' };
+	abc[0] = { "Which of the names listed is spelled correctly?","Union of Teachers in Bulgaria","Bulgarian State Railways","National Revenue Agency","United States of America",'c' };
+	abc[1] = { "Indicate the true statement. Endothermic processes:","occur with the absorption of heat and the final products are richer in energy than the starting substances","proceed with the absorption of heat and the final products are poorer in energy than the starting substances","proceed with the release of heat and the final products are richer in energy than the starting substances","proceed with the release of heat and the final products are poorer in energy than the starting substances",'b' };
+	abc[2] = { "Indicate the true statement. According to Hess's law, the thermal effect of a reaction depends on?","the initial state of the system","he final state of the system","the initial and final state of the system, as well as the intermediate stages of the reaction","the initial and final state of the system and does not depend on its intermediate stages",'c' };
+	abc[3] = { "Which sentence has a grammatical mistake?","So far only a few projects meet the requirements","And today, to my regret, after the end of the seminar in the club, I did not find anyone","Any of my friends will be able to give me the address of the foundation","The authors whose materials I reviewed today have really big ambitions.",'b' };
+	abc[4] = { "In which order are all the words spelled correctly? ","distracted, restless, sleepless","polite, no-nonsense, distance","major, nein, zoning","honesty, danger, selflessness",'b' };
+	abc[5] = { "Which sentence is NOT misspelled?","I'lluminated by the moon, the mountain shone like silver, the bare frozen forests darkened, its valleys and ravines gaped like pits, sunken in snow and breathing cold","In the evening, when the fog over the field cleared and the snow turned red from the sunset, the five wolves that lay in the sparse forest by the road set off for the mountain","She came from the end well, gilded the rings of the iron chain, bent over the bucket, wet her clear forehead and shook it violently in the air.","The plums turn red above the braids, and the yellow bells hang from the broad-leaved pumpkins,which ring, swayed by the meek song of the bees",'b' };
+	abc[6] = { "Which sentence has a punctuation error?","Thin, hot, they looked like twins - both were the same height, light brown, and their manes and tails were even lighter, almost white","Water could be heard rushing from the other side, torrents were flowing down through the bars, and in the village valley a whole river was now roaring - dim, wide, scary","Sometimes it rained, at first with thunder and wind, then settled, overthe field was covered with mist and the rain was falling softly and softly","The horizon was not visible, the massive and heavy outlines of mountains were not obstructed anywhere, there were no forests, no trees",'c' };
+	abc[7] = { "In which sentence is NOT a punctuation error?","On one side of the square was a dark building with a huge tree in the courtyard, probably a church, judging by its scabbard on the roof","The fifth turned into a long main street lined with houses, which led them to a poorly lit square","He saw a brown street jammed with cars and passers-by wearing dark coats","He got up, went to the door, found it unlocked and locked it",'d' };
+	abc[8] = { "In which of the sentences is the punctuation norm violated?","Both permanent and temporary exhibitions display the collected treasures","The museum, located on the territory of the monastery, has 35,000 exhibits","There are many collections, including icons and wood carvings and collections of manuscripts","However, it is not possible for visitors to the complex to see all the valuables",'c' };
+	abc[9] = { "In which of the sentences is a punctuation error made?","The frescoes and wood carvings in the monastery were painted and made by generations of painters and craftsmen","They have worked hard to give their best and have achieved a lot","From the 10th century, when it was founded, the temple was unwittingly destroyed and burned, after which it was rebuilt","The holy cloister acquired this appearance only when it was completely restored, which happened in the middle of the 20th century",'c' };
+	abc[10] = { "In which of the sentences is NOT a lexical error?","Kliment Ohridski founded a book school that trained clerics and grammarians","During the Revival, many were initiated into the cell school of Neophyte Rilski students","Many Bulgarians and revolutionaries, including Botev, lived in Bucharest at that time","The Rila Monastery is not only a religious and cultural monument, but also a historical shrine",'d' };
+	abc[11] = { "Which of the following qualities does not have quixote? ","courage","magnanimity","determination","kindness",'d' };
+	abc[12] = { "What a change in Sancho Pansa ? ","gets rich","is no longer a materialist","becomes more honest","forgets where he started from",'c' };
+	abc[13] = { "What is not the conflict in Hamlet?","conceptual","slaughtered","elevated","personal",'c' };
+	abc[14] = { "What is leading during Classicism?","the circus","to affect life such that,as it is","reason","striving for rapprochement with God",'c' };
+	abc[15] = { "Which of the following qualities does Orgone not possess?","trustworthiness","hypocrisy","naivety","blindness",'b' };
 
 	do {
 
@@ -130,7 +141,7 @@ void quiz_10grade()
 			i++;
 		}
 	} 
-	while (i < 5);
+	while (i < 13);
 
 	if (i < 4) 
 	{
