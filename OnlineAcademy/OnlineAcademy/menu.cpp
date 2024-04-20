@@ -1,6 +1,7 @@
 ﻿#include "menu.h"
 #include "dataAccess.h"
 #include "quiz.h"
+#include "quiz_10grade.h"
 
 // Function to display the starting screen and handle user input for name entry and checking for existing students
 void startingScreen()
@@ -45,11 +46,9 @@ void startingScreen()
     }
 
     system("CLS");
-    
+   
 
     std::vector<std::string> menuOptions = { "Revision", "Start test", "Information", "Grades", "Exit" };
-    menu(menuOptions);
-
     std::cout << " ___ ___   ____  ____  ____       ___ ___    ___  ____   __ __ " << std::endl;
     std::cout << "|   T   | /    Tl    j|    \\     |   T   |  /  _]|    \\ |  T  |" << std::endl;
     std::cout << "| _   _ |/  o  | |  | |  _  \\    | _   _ | /  [_ |  _  \\|  |  |" << std::endl;
@@ -57,6 +56,9 @@ void startingScreen()
     std::cout << "|   |   ||  _  | |  | |  |  |    |   |   ||   [_ |  |  ||  |  |" << std::endl;
     std::cout << "|   |   ||  |  | j  l |  |  |    |   |   ||     ||  |  |l     |" << std::endl;
     std::cout << "l___j___jl__j__j|____jl__|__j    l___j___jl_____jl__j__j \\__,_j" << std::endl;
+    menu(menuOptions);
+
+   
 }
 
 
@@ -132,29 +134,34 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
     int selectedOption = 0;
     char pressedKey = ' ';
 
-    while (true) {
+    while (true) 
+    {
         system("CLS"); 
         printSubMenuOptions(subMenuStartTestOptions, selectedOption);
 
         pressedKey = _getch();
 
-        if (pressedKey == (char)72 && selectedOption > 0) {
+        if (pressedKey == (char)72 && selectedOption > 0) 
+        {
             selectedOption--; 
         }
-        else if (pressedKey == (char)80 && selectedOption < subMenuStartTestOptions.size() - 1) {
+        else if (pressedKey == (char)80 && selectedOption < subMenuStartTestOptions.size() - 1) 
+        {
             selectedOption++; 
         }
 
         // Handle user selection
-        if (pressedKey == '\r') {
-            switch (selectedOption) {
+        if (pressedKey == '\r') 
+        {
+            switch (selectedOption) 
+            {
             case 0:
                 system("CLS");
                 quiz();
                 break;
             case 1:
                 system("CLS");
-                quiz();
+               quiz_10grade();
                 break;
             case 2:
                 system("CLS");
@@ -653,6 +660,12 @@ void menu(std::vector<std::string> menuOptions)
                 if (pressedKey == 27)
                 {
                     displayMenu = true;
+                }
+                else
+                {
+                    std::cout << "Invalid choice. Returning to main menu.\n";
+                    system("CLS");
+                    menu(menuOptions);
                 }
                 break;
 

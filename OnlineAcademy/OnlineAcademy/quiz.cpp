@@ -1,8 +1,5 @@
 #include "quiz.h"
 
-	double duration;
-	double maxtime = 60;
-	
 	int point = 0;
 	int myarr = 0;
 class student
@@ -11,7 +8,7 @@ class student
 	char name[50];
 	//void calculate();	//function to calculate grade
 	int obt;
-	double per;
+	double persent;
 	char grade;
 
 	void calculate();	//function to calculate grade
@@ -26,20 +23,20 @@ void student::calculate()
 {
 	const char* comm;
 
-	per = point / 5 * 10;
+	persent = point / 5 * 10;
 
-	if (per >= 80)
+	if (persent >= 80)
 	{
 		grade = 'A';
 		comm = "Excellent";
 	}
-	else if (per >= 60)
+	else if (persent >= 60)
 	{
 		grade = 'B';
 		comm = "Good";
 	}
 
-	else if (per >= 40)
+	else if (persent >= 40)
 	{
 		grade = 'C';
 		comm = "Fair";
@@ -60,7 +57,7 @@ void student::showdata() const
 
 void student::show_tabular() const
 {
-	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << per << std::setw(6) << grade << std::endl;
+	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << persent << std::setw(6) << grade << std::endl;
 	myarr++;
 }
 
@@ -75,9 +72,9 @@ void quiz()
 	int i = 0;
 	int right = 0;
 	int wrong = 0;
-	char answer;
+	char answers;
 	struct question abc[6];
-	int srno = 0;
+	int number = 0;
 
 
 	abc[0] = { "Which of the following is not the characteristic of a class?","Generic","Friend","Inline","Inline",'c' };
@@ -86,40 +83,34 @@ void quiz()
 	abc[3] = { "Which of the following isn’t supported in C++ language?","Namespaces.","Inheritance","Reflection.","Polymorphism.",'c' };
 	abc[4] = { "Which of the following keywords can’t appear inside a class definition?","template","static","virtual","friend",'a' };
 
-	do {
-		duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
-		std::cout << maxtime - duration << std::endl;
-		if (duration >= maxtime) {
-			t = 0;
-			break;
-		}
+	do 
+	{
 
-		if (srno == i) {
+		if (number == i)
+		{
 			system("cls");
 
-			srno++;
+			number++;
 			b = ' ';
 			e = ' ';
-			answer = abc[i].ans;
+			answers = abc[i].yourAnswer;
 
-			std::cout << "Question " << srno << ") " << std::endl;
+			std::cout << "Question " << number << ") " << std::endl;
 			
-			std::cout << abc[i].ques << std::endl;
+			std::cout << abc[i].questions << std::endl;
 		
 		
-			std::cout << " a - " << abc[i].ans1 << std::endl;
+			std::cout << " a - " << abc[i].answer1 << std::endl;
 			
-			std::cout << " b - " << abc[i].ans2 << std::endl;
+			std::cout << " b - " << abc[i].answer2 << std::endl;
 			
-			std::cout << " c - " << abc[i].ans3 << std::endl;
+			std::cout << " c - " << abc[i].answer3 << std::endl;
 			
-			std::cout << " d - " << abc[i].ans4 << std::endl;
+			std::cout << " d - " << abc[i].answer4 << std::endl;
 			
-			std::cout << " Press Enter to skip ";
+			std::cout << " Press Enter to skip " << std::endl;
 		
-			std::cout << " Select your Option ==> ";
-			
-			std::cout << " Your Remaning Time ==> ";
+			std::cout << "\t Select your Option ==> ";
 
 		}
 
@@ -130,20 +121,24 @@ void quiz()
 			//cin>>a;
 			std::cout << a;
 
-			if (int(a) == 13) {
+			if (int(a) == 13) 
+			{
 
 				
 				std::cout << "You skipped this Question";
 			}
-			else {
-				if (a == answer) {
+			else 
+			{
+				if (a == answers) 
+				{
 					
 					point = point + 10;
 					std::cout << "Congratulation You selected right option";
 				}
-				else {
+				else 
+				{
 					
-					std::cout << "Correct Option is  ==> " << answer;
+					std::cout << "Correct Option is  ==> " << answers;
 					
 					std::cout << "You selected wrong option.";
 
@@ -152,9 +147,11 @@ void quiz()
 			_getch();
 			i++;
 		}
-	} while (i < 5);
+	} 
+	while (i < 5);
 
-	if (i < 4) {
+	if (i < 4) 
+	{
 		std::cout << "\nTime is up. You failed to attempt all questions" << std::endl;
 	}
 
