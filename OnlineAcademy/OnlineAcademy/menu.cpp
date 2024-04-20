@@ -128,6 +128,7 @@ void printSubMenuOptions(std::vector<std::string> subMenuOptions, int selectedOp
 // Function to handle the "Start Test" submenu
 bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vector<std::string> menuOptions)
 {
+
     int selectedOption = 0;
     char pressedKey = ' ';
 

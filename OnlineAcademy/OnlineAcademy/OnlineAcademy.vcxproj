@@ -142,11 +142,15 @@
     <ClCompile Include="dataAccess.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="quiz.cpp" />
+    <ClCompile Include="results.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dataAccess.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="quiz.h" />
+    <ClInclude Include="results.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

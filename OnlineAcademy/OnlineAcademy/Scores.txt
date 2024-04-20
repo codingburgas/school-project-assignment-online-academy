@@ -26,3 +26,6 @@ gsbi 0
 gabii 0
 y 0
 sisi 0
+VIKI 0
+GABI 0
+hari 0
