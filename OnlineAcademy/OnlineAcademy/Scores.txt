@@ -29,3 +29,6 @@ sisi 0
 VIKI 0
 GABI 0
 hari 0
+yaa 0
+yaba 0
+yaan 0
