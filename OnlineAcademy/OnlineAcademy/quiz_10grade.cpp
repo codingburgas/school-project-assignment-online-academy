@@ -10,9 +10,7 @@ class student
 	int obt;
 	double persent;
 	char grade;
-
 	void calculate_10grade();	//function to calculate grade
-	void Result();
 
 public:
 	void showdata() const;	//function to show data on screen
@@ -52,7 +50,6 @@ void student::calculate_10grade()
 void quiz_10grade()
 {
 	char a, b, e;
-	int t = 0;
 	int i = 0;
 	int right = 0;
 	int wrong = 0;
@@ -158,12 +155,6 @@ void quiz_10grade()
 	} 
 	while (i < 30);
 
-	if (i < 4) 
-	{
-		std::cout << "\nTime is up. You failed to attempt all questions" << std::endl;
-	}
-
-	_getch();
 }
 
 

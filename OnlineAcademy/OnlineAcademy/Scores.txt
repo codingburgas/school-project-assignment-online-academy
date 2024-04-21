@@ -38,4 +38,9 @@ yaan 0
 >>>>>>> 9759ee8e8214635f8dd591178eafccb9284c4da8
 Masha 0
 masha 0
+<<<<<<< HEAD
 Rostilsav 0
+=======
+didi 0
+dani 0
+>>>>>>> 6d6a5efc65103a385ab15db7d19b0738b80cd337

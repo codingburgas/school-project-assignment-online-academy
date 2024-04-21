@@ -48,7 +48,7 @@ void startingScreen()
     system("CLS");
    
 
-    std::vector<std::string> menuOptions = { "Revision", "Start test", "Information", "Grades", "Exit" };
+    std::vector<std::string> menuOptions = { "Revision", "Start test", "Instructions", "Grades", "Exit" };
     std::cout << " ___ ___   ____  ____  ____       ___ ___    ___  ____   __ __ " << std::endl;
     std::cout << "|   T   | /    Tl    j|    \\     |   T   |  /  _]|    \\ |  T  |" << std::endl;
     std::cout << "| _   _ |/  o  | |  | |  _  \\    | _   _ | /  [_ |  _  \\|  |  |" << std::endl;
@@ -659,7 +659,8 @@ void menu(std::vector<std::string> menuOptions)
                 std::cout << "\t\t\t|   |                                                                |." << std::endl;
                 std::cout << "\t\t\t \\_ |                                                                |." << std::endl;
                 std::cout << "\t\t\t    |                                                                |." << std::endl;
-                std::cout << "\t\t\t    | Hello, we are Online Academy and we made an app and 10-th grade|." << std::endl;
+                std::cout << "\t\t\t    | Hello, we are Online Academy and we made an app for you to     |." << std::endl;
+                std::cout << "\t\t\t    | study for the final exams in 9-th and 10-th grade.             |." << std::endl;
                 std::cout << "\t\t\t    | We know that they are so important and we wanted to help you.  |." << std::endl;
                 std::cout << "\t\t\t    | If you want to use our app here are the instructions.          |." << std::endl;
                 std::cout << "\t\t\t    | Firtsly go to Revision to revise for the forthcoming exams     |." << std::endl;
