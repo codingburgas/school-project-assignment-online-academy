@@ -3,6 +3,15 @@
 #include "quiz.h"
 #include "quiz_10grade.h"
 
+bool updateScore(bool sequence)
+{
+    if (sequence)
+    {
+        return true;
+    }
+    return false;
+}
+
 // Function to display the starting screen and handle user input for name entry and checking for existing students
 void startingScreen()
 {
@@ -15,7 +24,7 @@ void startingScreen()
     std::cout << "\t\t\t\t \\      / |     ||     |\\     |\\     /|   |   ||     |" << std::endl;
     std::cout << "\t\t\t\t  \\_/\\_/  l_____jl_____j \\____j \\___/ l___j___jl_____j" << std::endl;
     
-    std::cout << "\n\n\n\t\t\t\t Enter your name before starting the quiz:"  ;
+    std::cout << "\n\n\n\t\t\t\t Enter your name before starting the quiz : ";
     std::cin >> student.name;
 
     Student existingStudent;
@@ -26,19 +35,13 @@ void startingScreen()
         std::cin >> choice;
         if (choice == 'y' || choice == 'Y')
         {
-            std::cout << "\n\n\n\t\t\t\t\t Enter your new score: ";
-            std::cin >> student.score;
-            updateStudent(student);
+            quiz.student.alreadyTakenTest = true;
+            quiz.student.persent = 0;
         }
         else
         {
-            std::cout << "\n\n\n\t\t\t\t\t Please choose a different name." << std::endl;
+            std::cout << "\n\n\n\t\t\t\t\t Please choose a different name: " << std::endl;
             std::cin >> student.name;
-
-            std::ofstream myfile("Scores.txt", std::ios::app);
-            student.score = 0;
-            myfile << student.name << " " << student.score << std::endl;
-            myfile.close();
         }
     }
     else
@@ -167,8 +170,19 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
                 break;
             case 1:
                 system("CLS");
-               quiz_10grade();
-                break;
+                quiz_10grade();
+
+                if (!updateScore(quiz.student.alreadyTakenTest))
+                {
+                    std::ofstream myfile("Scores.txt", std::ios::app);
+                    myfile << quiz.student.name << " " << quiz.student.persent << " " << quiz.student.grade << std::endl;
+                    myfile.close();
+                    break;
+                }
+                else
+                {
+
+                }
             case 2:
                 system("CLS");
                 return true; 

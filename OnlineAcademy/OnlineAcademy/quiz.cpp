@@ -1,7 +1,8 @@
 #include "quiz.h"
 
-	int point = 0;
-	int myarr = 0;
+int point = 0;
+int myarr = 0;
+
 class student
 {
 	int rollno;
@@ -9,12 +10,14 @@ class student
 	int obt;
 	double persent;
 	char grade;
+	int score;
+	bool alreadyTakenTest = false;
 	void calculate();	//function to calculate grade
 
 public:
 	void showdata() const;	//function to show data on screen
 	void show_tabular() const;
-}; 
+};
 
 void student::calculate()
 {
@@ -99,7 +102,7 @@ void quiz()
 	abc[28] = { "Writing a code that prevents a program from a runtime crash is called?","Syntax checking","Breakpointing","Exception handling","Error correcting code",'c' };
 	abc[29] = { "Which keyword is used to handle the expection?","handler","catch","throw","try",'b' };
 
-	do 
+	do
 	{
 
 		if (number == i)
@@ -112,48 +115,46 @@ void quiz()
 			answers = abc[i].yourAnswer;
 
 			std::cout << "Question " << number << ") " << std::endl;
-			
+
 			std::cout << abc[i].questions << std::endl;
-		
-		
+
+
 			std::cout << " a - " << abc[i].answer1 << std::endl;
-			
+
 			std::cout << " b - " << abc[i].answer2 << std::endl;
-			
+
 			std::cout << " c - " << abc[i].answer3 << std::endl;
-			
+
 			std::cout << " d - " << abc[i].answer4 << std::endl;
-			
+
 			std::cout << " Press Enter to skip " << std::endl;
-		
+
 			std::cout << "\t Select your Option ==> ";
 
 		}
 
-		if (_kbhit()) 
+		if (_kbhit())
 		{
-			
+
 			a = _getch();
 			//cin>>a;
 			std::cout << a;
 
-			if (int(a) == 13) 
+			if (int(a) == 13)
 			{
 				std::cout << "\tYou skipped this Question";
 			}
-			else 
+			else
 			{
-				if (a == answers) 
+				if (a == answers)
 				{
-					
-					point = point + 10;
+					point += 10;
 					std::cout << "\tCongratulation You selected right option";
 				}
-				else 
+				else
 				{
-					
 					std::cout << "\tCorrect Option is  ==> " << answers;
-					
+
 					std::cout << "\tYou selected wrong option.";
 
 				}
@@ -161,9 +162,7 @@ void quiz()
 			_getch();
 			i++;
 		}
-	} 
-	while (i < 30);
-
+	} while (i < 30);
 
 }
 

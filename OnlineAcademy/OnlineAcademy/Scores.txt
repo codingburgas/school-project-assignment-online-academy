@@ -7,7 +7,7 @@ y 5
 viki 10
 y 5
 y 5
-yana 540
+yana 7
 nina 0
 ani 6
 alex 12

@@ -1,14 +1,14 @@
 #include "quiz_10grade.h"
+#include "quiz.h"
 
 int point_10grade = 0;
 
 class student
 {
-
 	char name[50];
 	//void calculate();	//function to calculate grade
 	int obt;
-	double persent;
+	double persent = quiz.student.point;
 	char grade;
 	void calculate_10grade();	//function to calculate grade
 
@@ -57,7 +57,6 @@ void quiz_10grade()
 	struct question abc[30];
 	int number = 0;
 
-
 	abc[0] = { "Which of the names listed is spelled correctly?","Union of Teachers in Bulgaria","Bulgarian State Railways","National Revenue Agency","United States of America",'c' };
 	abc[1] = { "Indicate the true statement. Endothermic processes:","occur with the absorption of heat and the final products are richer in energy than the starting substances","proceed with the absorption of heat and the final products are poorer in energy than the starting substances","proceed with the release of heat and the final products are richer in energy than the starting substances","proceed with the release of heat and the final products are poorer in energy than the starting substances",'b' };
 	abc[2] = { "Indicate the true statement. According to Hess's law, the thermal effect of a reaction depends on?","the initial state of the system","he final state of the system","the initial and final state of the system, as well as the intermediate stages of the reaction","the initial and final state of the system and does not depend on its intermediate stages",'c' };
@@ -91,7 +90,6 @@ void quiz_10grade()
 
 
 	do {
-
 		if (number == i)
 		{
 			system("cls");
@@ -123,7 +121,6 @@ void quiz_10grade()
 
 		if (_kbhit())
 		{
-
 			a = _getch();
 			//cin>>a;
 			std::cout << a;
