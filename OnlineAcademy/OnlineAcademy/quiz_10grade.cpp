@@ -57,7 +57,7 @@ void quiz_10grade()
 	int right = 0;
 	int wrong = 0;
 	char answers;
-	struct question abc[16];
+	struct question abc[30];
 	int number = 0;
 
 
@@ -77,6 +77,21 @@ void quiz_10grade()
 	abc[13] = { "What is not the conflict in Hamlet?","conceptual","slaughtered","elevated","personal",'c' };
 	abc[14] = { "What is leading during Classicism?","the circus","to affect life such that,as it is","reason","striving for rapprochement with God",'c' };
 	abc[15] = { "Which of the following qualities does Orgone not possess?","trustworthiness","hypocrisy","naivety","blindness",'b' };
+	abc[16] = { "In which of the lines are the character and the work correctly related?","Kutsar - Indje","Gatyu - The Heroes","Bezportev - Under the yoke","Bojan - Tobacco",'d' };
+	abc[18] = { "In which of the lines are the work and its genre correctly related?","Story - a story","September - a lyrical cycle","Levski - ode","Cis moll - elegy",'b' };
+	abc[19] = { "Which work is characterized by the motif of the fog that has turned intoa metaphor for human life ?","Tobacco","Letter","Armenians","Winter evenings",'d' };
+	abc[20] = { "In which of the lines is indicated a phenomenon characteristic only of the post-war periodmodernism? ","expressionism","aesthetic individualism","symbolism","realism",'a' };
+	abc[21] = { "How many traits are tracked in a dihybrid cross?","one","three","two","more than three",'c' };
+	abc[22] = { "A person's gender is determined by?","the segmentation","fertilization","gastrulation","gametogenesis",'b' };
+	abc[23] = { "Anthropogenesis is a process of?","embryonic development of man","extinction of organisms due to human activity","origin and historical development of man","climate change due to human activity",'c' };
+	abc[24] = { "The rate of a chemical reaction in an irreversible process does NOT change when?","increasing the concentration of the reactant","decrease in product concentration","change in temperature of the system","adding a catalyst to the system",'b' };
+	abc[25] = { "Which of the following statements about enzymes is NOT true?","their activity is preserved at a very high temperature","are very sensitive","their action is influenced by the pH of the environment","can speed up only one process",'a' };
+	abc[26] = { "The dissolution of substances is?","a chemical process with a certain heat effect","always an endothermic process","a physicochemical process with a certain thermal effect","physical exothermic process",'c' };
+	abc[27] = { "Which of the given examples is a solution?","mineral water","distilled water","customs water","milk",'a' };
+	abc[28] = { "When organic substances are burned, CO2 is released. Which of the biological processes is important for the reduction of CO2 in nature?","sweet fruit fermentation","photosynthesis","putrefaction","breathing",'b' };
+	abc[29] = { "Name the faithful creation. Exothermic processes?","proceed with the absorption of heat and the final products are richer in energy than the starting substances","proceed with the absorption of heat and the final products are poorer in energy than the starting substances","proceed with the release of heat and the final products are richer in energy than the starting substances","proceed with the release of heat and the final products are poorer",'c' };
+
+
 
 	do {
 
@@ -141,7 +156,7 @@ void quiz_10grade()
 			i++;
 		}
 	} 
-	while (i < 13);
+	while (i < 30);
 
 	if (i < 4) 
 	{
