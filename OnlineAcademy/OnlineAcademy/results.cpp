@@ -8,9 +8,7 @@ class student
 	int obt;
 	double per;
 	char grade;
-
 	void calculate();	//function to calculate grade
-	void Result();
 public:
 
 	void showdata() const;	//function to show data on screen

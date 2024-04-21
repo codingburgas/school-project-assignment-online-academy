@@ -6,18 +6,15 @@ class student
 {
 	int rollno;
 	char name[50];
-	//void calculate();	//function to calculate grade
 	int obt;
 	double persent;
 	char grade;
-
 	void calculate();	//function to calculate grade
-	void Result();
 
 public:
 	void showdata() const;	//function to show data on screen
 	void show_tabular() const;
-}; //class ends here
+}; 
 
 void student::calculate()
 {
@@ -48,7 +45,6 @@ void student::calculate()
 	}
 }
 
-
 void student::showdata() const
 {
 	std::cout << "\nRoll number of student : " << rollno;
@@ -63,12 +59,7 @@ void student::show_tabular() const
 
 void quiz()
 {
-
-	std::clock_t start;
-	start = std::clock();
-
 	char a, b, e;
-	int t = 0;
 	int i = 0;
 	int right = 0;
 	int wrong = 0;
@@ -148,9 +139,7 @@ void quiz()
 
 			if (int(a) == 13) 
 			{
-
-				
-				std::cout << "You skipped this Question";
+				std::cout << "\tYou skipped this Question";
 			}
 			else 
 			{
@@ -158,14 +147,14 @@ void quiz()
 				{
 					
 					point = point + 10;
-					std::cout << "Congratulation You selected right option";
+					std::cout << "\tCongratulation You selected right option";
 				}
 				else 
 				{
 					
-					std::cout << "Correct Option is  ==> " << answers;
+					std::cout << "\tCorrect Option is  ==> " << answers;
 					
-					std::cout << "You selected wrong option.";
+					std::cout << "\tYou selected wrong option.";
 
 				}
 			}
@@ -175,12 +164,7 @@ void quiz()
 	} 
 	while (i < 30);
 
-	if (i < 4) 
-	{
-		std::cout << "\nTime is up. You failed to attempt all questions" << std::endl;
-	}
 
-	_getch();
 }
 
 
