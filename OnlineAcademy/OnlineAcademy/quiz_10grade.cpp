@@ -1,53 +1,7 @@
 #include "quiz_10grade.h"
 #include "quiz.h"
 
-int point_10grade = 0;
-
-class student
-{
-	char name[50];
-	//void calculate();	//function to calculate grade
-	int obt;
-	double persent = quiz.student.point;
-	char grade;
-	void calculate_10grade();	//function to calculate grade
-
-public:
-	void showdata() const;	//function to show data on screen
-	void show_tabular() const;
-}; //class ends here
-
-void student::calculate_10grade()
-{
-	const char* comm;
-
-	persent = point_10grade / 5 * 10;
-
-	if (persent >= 80)
-	{
-		grade = 'A';
-		comm = "Excellent";
-	}
-	else if (persent >= 60)
-	{
-		grade = 'B';
-		comm = "Good";
-	}
-
-	else if (persent >= 40)
-	{
-		grade = 'C';
-		comm = "Fair";
-	}
-	else
-	{
-		grade = 'F';
-		comm = "Fail Do hard work..";
-	}
-}
-
-
-void quiz_10grade()
+void quiz_10grade(student currentStudent)
 {
 	char a, b, e;
 	int i = 0;
@@ -125,19 +79,19 @@ void quiz_10grade()
 			//cin>>a;
 			std::cout << a;
 
-			if (int(a) == 13) 
+			if (int(a) == 13)
 			{
 				std::cout << "\tYou skipped this Question";
 			}
-			else 
+			else
 			{
-				if (a == answers) 
+				if (a == answers)
 				{
 
-					point_10grade = point_10grade + 10;
+					currentStudent.percent += 10;
 					std::cout << "\tCongratulation You selected right option";
 				}
-				else 
+				else
 				{
 
 					std::cout << "\tCorrect Option is  ==> " << answers;
@@ -149,9 +103,38 @@ void quiz_10grade()
 			_getch();
 			i++;
 		}
-	} 
-	while (i < 30);
+	} while (i < 30);
 
 }
+
+void calculate_10grade(student currentStudent)
+{
+	const char* comm;
+
+	if (currentStudent.percent >= 80)
+	{
+		currentStudent.grade = 'A';
+		comm = "Excellent";
+	}
+	else if (currentStudent.percent >= 60)
+	{
+		currentStudent.grade = 'B';
+		comm = "Good";
+	}
+
+	else if (currentStudent.percent >= 40)
+	{
+		currentStudent.grade = 'C';
+		comm = "Fair";
+	}
+	else
+	{
+		currentStudent.grade = 'F';
+		comm = "Fail Do hard work..";
+	}
+}
+
+
+
 
 

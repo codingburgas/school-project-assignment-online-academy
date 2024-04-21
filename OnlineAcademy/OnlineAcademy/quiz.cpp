@@ -3,61 +3,13 @@
 int point = 0;
 int myarr = 0;
 
-class student
-{
-	int rollno;
-	char name[50];
-	int obt;
-	double persent;
-	char grade;
-	int score;
-	bool alreadyTakenTest = false;
-	void calculate();	//function to calculate grade
-
-public:
-	void showdata() const;	//function to show data on screen
-	void show_tabular() const;
-};
-
-void student::calculate()
-{
-	const char* comm;
-
-	persent = point / 5 * 10;
-
-	if (persent >= 80)
-	{
-		grade = 'A';
-		comm = "Excellent";
-	}
-	else if (persent >= 60)
-	{
-		grade = 'B';
-		comm = "Good";
-	}
-
-	else if (persent >= 40)
-	{
-		grade = 'C';
-		comm = "Fair";
-	}
-	else
-	{
-		grade = 'F';
-		comm = "Fail Do hard work..";
-	}
+void student::show_tabular() const {
+	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << percent << std::setw(6) << grade << std::endl;
 }
 
-void student::showdata() const
-{
-	std::cout << "\nRoll number of student : " << rollno;
-	std::cout << "\nName of student : " << name;
-}
-
-void student::show_tabular() const
-{
-	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << persent << std::setw(6) << grade << std::endl;
-	myarr++;
+void student::showdata() const {
+	std::cout << "\nRoll number of student: " << rollno;
+	std::cout << "\nName of student: " << name << std::endl;
 }
 
 void quiz()

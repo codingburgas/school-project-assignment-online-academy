@@ -20,7 +20,7 @@ void write_student()
 	student st;
 	std::ofstream outFile;
 	outFile.open("Results.txt", std::ios::binary | std::ios::app);
-	
+
 	outFile.write(reinterpret_cast<char*> (&st), sizeof(student));
 	outFile.close();
 	//	cout<<"\n\nStudent record Has Been Created ";

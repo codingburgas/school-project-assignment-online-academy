@@ -1,19 +1,36 @@
-<<<<<<< HEAD
-﻿  menu.cpp
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(38,21): error C2039: 'alreadyTakenTest': is not a member of 'Student'
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\pch.h(14): message : see declaration of 'Student'
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(109,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(116,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(131,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(138,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(311,30): warning C4129: '_': unrecognized character escape sequence
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(329,34): warning C4129: '_': unrecognized character escape sequence
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(488,34): warning C4129: '_': unrecognized character escape sequence
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(614,42): warning C4566: character represented by universal-character-name '\u03B3' cannot be represented in the current code page (1252)
+﻿  dataAccess.cpp
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(5,43): error C2061: syntax error: identifier 'Student'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(7,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(7,33): error C2143: syntax error: missing ',' before '&'
+  menu.cpp
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7,6): error C2182: 'displayMenu': illegal use of type 'void'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7,18): error C2065: 'student': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7,26): error C2146: syntax error: missing ')' before identifier 'currentStudent'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(25,49): error C2061: syntax error: identifier 'student'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(5,43): error C2061: syntax error: identifier 'Student'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(7,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(7,33): error C2143: syntax error: missing ',' before '&'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(10,6): error C2365: 'displayMenu': redefinition; previous definition was 'data variable'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7): message : see declaration of 'displayMenu'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(23,34): error C2660: 'menu': function does not take 2 arguments
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(25,6): message : see declaration of 'menu'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(39,5): error C2660: 'findStudent': function does not take 2 arguments
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\dataAccess.h(5,6): message : see declaration of 'findStudent'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(62,2): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(96,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(103,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(118,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(125,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(314,18): warning C4129: '_': unrecognized character escape sequence
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(332,19): warning C4129: '_': unrecognized character escape sequence
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(491,19): warning C4129: '_': unrecognized character escape sequence
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(617,21): warning C4566: character represented by universal-character-name '\u03B3' cannot be represented in the current code page (1252)
+  main.cpp
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7,6): error C2182: 'displayMenu': illegal use of type 'void'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7,18): error C2065: 'student': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(7,26): error C2146: syntax error: missing ')' before identifier 'currentStudent'
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.h(25,49): error C2061: syntax error: identifier 'student'
+  quiz.cpp
   quiz_10grade.cpp
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\quiz_10grade.cpp(12,24): error C2228: left of '.student' must have class/struct/union
+  results.cpp
   Generating Code...
-=======
-﻿  quiz_10grade.cpp
-  OnlineAcademy.vcxproj -> C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe
->>>>>>> 952acf3b6f16561a645bf3175bae7cd1b349eb28

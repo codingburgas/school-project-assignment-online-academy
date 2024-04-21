@@ -4,6 +4,8 @@
 // Function to display the starting screen and handle user input for name entry and checking for existing students
 void startingScreen();
 
+void displayMenu(student currentStudent);
+
 // Function to set the cursor position on the console window
 void outputPosition(int x, int y);
 
@@ -17,11 +19,8 @@ void printMenuOptions(std::vector<std::string> menuOptions, int selectedOption);
 void printSubMenuOptions(std::vector<std::string> subMenuOptions, int selectedOption);
 
 // Function to handle the "Start Test" submenu
-bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vector<std::string> menuOptions);
-
-// Function to handle the "Grades" submenu
 bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<std::string> menuOptions);
 
 // Function to display the main menu and handle user input
-void menu(std::vector<std::string> menuOptions);
+void menu(std::vector<std::string> menuOptions, student currentStudent);
 

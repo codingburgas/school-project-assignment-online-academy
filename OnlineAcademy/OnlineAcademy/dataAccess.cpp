@@ -1,7 +1,8 @@
 #include "dataAccess.h"
+#include "quiz.h"
 
 // Function to find a student by name in the Scores.txt file
-bool findStudent(const std::string& name, Student& student)
+bool findStudent(const std::string& name, student currentStudent)
 {
     std::ifstream file("Scores.txt");
     std::string line;
@@ -9,8 +10,8 @@ bool findStudent(const std::string& name, Student& student)
     {
         if (line.find(name) != std::string::npos)
         {
-            student.name = name;
-            student.score = stoi(line.substr(line.find_last_of(' ') + 1));
+            currentStudent.name = name;
+            currentStudent.score = stoi(line.substr(line.find_last_of(' ') + 1));
             return true;
         }
     }
@@ -18,21 +19,21 @@ bool findStudent(const std::string& name, Student& student)
 }
 
 // Function to update a student's score in the Scores.txt file
-void updateStudent(const Student& student)
+void updateStudent(const student currentStudent)
 {
     std::ifstream file("Scores.txt");
     std::vector<std::string> lines;
     std::string line;
     while (getline(file, line))
     {
-        if (line.find(student.name) == std::string::npos)
+        if (line.find(currentStudent.name) == std::string::npos)
         {
             lines.push_back(line);
         }
         else
         {
             // Update the student's score in the line
-            lines.push_back(student.name + " " + std::to_string(student.score));
+            lines.push_back(currentStudent.name + " " + std::to_string(currentStudent.score));
         }
     }
     file.close();

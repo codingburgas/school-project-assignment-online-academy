@@ -1,9 +1,10 @@
 #pragma once
 #include "pch.h"
+#include "quiz.h"
 
 // Function to find a student by name in the Scores.txt file
-bool findStudent(const std::string& name, Student& student);
+bool findStudent(const std::string& name, student currentStudent);
 
-void updateStudent(const Student& student);
+void updateStudent(const student currentStudent);
 
 

@@ -11,12 +11,6 @@
 #include <cstdio>
 #include <ctime>
 
-struct Student
-{
-    std::string name;
-    int score;
-};
-
 struct question
 {
 	std::string questions;
