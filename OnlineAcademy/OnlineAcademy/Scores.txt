@@ -7,7 +7,7 @@ y 5
 viki 10
 y 5
 y 5
-yana 6
+yana 540
 nina 0
 ani 6
 alex 12
@@ -44,3 +44,4 @@ Rostilsav 0
 didi 0
 dani 0
 >>>>>>> 6d6a5efc65103a385ab15db7d19b0738b80cd337
+keni 0

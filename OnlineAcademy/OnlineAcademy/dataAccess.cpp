@@ -21,7 +21,7 @@ bool findStudent(const std::string& name, Student& student)
 void updateStudent(const Student& student)
 {
     std::ifstream file("Scores.txt");
-    std::vector <std::string> lines;
+    std::vector<std::string> lines;
     std::string line;
     while (getline(file, line))
     {

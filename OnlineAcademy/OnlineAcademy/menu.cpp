@@ -15,18 +15,24 @@ void startingScreen()
     std::cout << "\t\t\t\t \\      / |     ||     |\\     |\\     /|   |   ||     |" << std::endl;
     std::cout << "\t\t\t\t  \\_/\\_/  l_____jl_____j \\____j \\___/ l___j___jl_____j" << std::endl;
     
-    std::cout << "\n\n\n\t\t\t\t    Enter your name before starting the quiz:"  ;
+    std::cout << "\n\n\n\t\t\t\t Enter your name before starting the quiz:"  ;
     std::cin >> student.name;
-  
+
     Student existingStudent;
     if (findStudent(student.name, existingStudent))
     {
         char choice;
-        std::cout << "\n\n\t\t\t\t    This name is already used. Is that you? (y/n): ";
+        std::cout << "\n\n\n\t\t\t\t This name is already used. Is that you? (y/n): ";
         std::cin >> choice;
-        if (choice == 'n' || choice == 'N')
+        if (choice == 'y' || choice == 'Y')
         {
-            std::cout << "\n\n\t\t\t\t    Please choose a different name:";
+            std::cout << "\n\n\n\t\t\t\t\t Enter your new score: ";
+            std::cin >> student.score;
+            updateStudent(student);
+        }
+        else
+        {
+            std::cout << "\n\n\n\t\t\t\t\t Please choose a different name." << std::endl;
             std::cin >> student.name;
 
             std::ofstream myfile("Scores.txt", std::ios::app);
@@ -216,7 +222,6 @@ bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<st
                 // Option 1
             case 0:
                 system("CLS");
-                std::cout << "Displaying highest grade." << std::endl;
                 // Implement displaying highest grade functionality
                 break;
 
@@ -684,7 +689,7 @@ void menu(std::vector<std::string> menuOptions)
                 {
                     std::cout << "Invalid choice. Returning to main menu.\n";
                     system("CLS");
-                    menu(menuOptions);
+                    displayMenu = true;
                 }
                 break;
 
