@@ -24,4 +24,3 @@ bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<st
 
 // Function to display the main menu and handle user input
 void menu(std::vector<std::string> menuOptions, student currentStudent);
-
