@@ -1,10 +1,10 @@
 #include "quiz.h"
-
 int point = 0;
 int myarr = 0;
 
-void student::show_tabular() const {
-	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << percent << std::setw(6) << grade << std::endl;
+void student::show_tabular() const 
+{
+	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << per << std::setw(6) << grade << std::endl;
 }
 
 void student::showdata() const {

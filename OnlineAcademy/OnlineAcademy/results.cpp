@@ -1,26 +1,57 @@
 #include "results.h"
+#include "quiz.h"
 
-class student
+
+void student::calculate()
 {
-	int rollno;
-	char name[50];
-	//void calculate();	//function to calculate grade
-	int obt;
-	double per;
-	char grade;
-	void calculate();	//function to calculate grade
-public:
+	per = point / 5 * 10;
 
-	void showdata() const;	//function to show data on screen
-	void show_tabular() const;
-}; //class ends here
+	if (per >= 80)
+	{
+		grade = 'A';
+		comm = "Excellent";
+	}
+	else if (per >= 60)
+	{
+		grade = 'B';
+		comm = "Good";
+	}
+
+	else if (per >= 40)
+	{
+		grade = 'C';
+		comm = "Fair";
+	}
+	else
+	{
+		grade = 'F';
+		comm = "Fail Do hard work..";
+	}
+}
+
+void student::getdata()
+{
+	point = 0;
+	std::cout << "\nEnter The roll number of student ";
+	std::cin >> rollno;
+	std::cout << "\n\nEnter The Name of student ";
+	std::cin.ignore();
+	std::cin.getline(name, 50);
+	system("cls");
+	quiz();
+	obt = point;
+
+	calculate();
+	system("cls");
+	Result();
+}
 
 void write_student()
 {
 	student st;
 	std::ofstream outFile;
 	outFile.open("Results.txt", std::ios::binary | std::ios::app);
-
+	st.getdata();
 	outFile.write(reinterpret_cast<char*> (&st), sizeof(student));
 	outFile.close();
 	//	cout<<"\n\nStudent record Has Been Created ";
@@ -80,12 +111,10 @@ void class_result()
 	std::cout << "==========================================================\n";
 	std::cout << "R.No          Name      Points     %      Grade" << std::endl;
 	std::cout << "==========================================================\n";
-
 	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(student)))
 	{
 		st.show_tabular();
 	}
-
 	std::cin.ignore();
 	std::cin.get();
 	inFile.close();

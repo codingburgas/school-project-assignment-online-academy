@@ -21,4 +21,23 @@ struct question
 	char yourAnswer;
 };
 
-
+class student
+{
+public:
+	int point = 0;
+	int myarr = 0;
+	int rollno;
+	char name[50];
+	//void calculate();	//function to calculate grade
+	int obt;
+	double score;
+	const char* comm;
+	void calculate();	//function to calculate grade
+	void Result();
+	int alreadyTakenTest;
+	char grade;
+	double per;
+	void getdata();		//function to accept data from user
+	void showdata() const;	//function to show data on screen
+	void show_tabular() const;
+};

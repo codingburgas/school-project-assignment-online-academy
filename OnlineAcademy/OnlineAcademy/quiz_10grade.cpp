@@ -11,6 +11,7 @@ void quiz_10grade(student currentStudent)
 	struct question abc[30];
 	int number = 0;
 
+
 	abc[0] = { "Which of the names listed is spelled correctly?","Union of Teachers in Bulgaria","Bulgarian State Railways","National Revenue Agency","United States of America",'c' };
 	abc[1] = { "Indicate the true statement. Endothermic processes:","occur with the absorption of heat and the final products are richer in energy than the starting substances","proceed with the absorption of heat and the final products are poorer in energy than the starting substances","proceed with the release of heat and the final products are richer in energy than the starting substances","proceed with the release of heat and the final products are poorer in energy than the starting substances",'b' };
 	abc[2] = { "Indicate the true statement. According to Hess's law, the thermal effect of a reaction depends on?","the initial state of the system","he final state of the system","the initial and final state of the system, as well as the intermediate stages of the reaction","the initial and final state of the system and does not depend on its intermediate stages",'c' };
@@ -88,7 +89,7 @@ void quiz_10grade(student currentStudent)
 				if (a == answers)
 				{
 
-					currentStudent.percent += 10;
+					currentStudent.per += 10;
 					std::cout << "\tCongratulation! You selected right option";
 				}
 				else
@@ -107,32 +108,6 @@ void quiz_10grade(student currentStudent)
 
 }
 
-void calculate_10grade(student currentStudent)
-{
-	const char* comm;
-
-	if (currentStudent.percent >= 80)
-	{
-		currentStudent.grade = 'A';
-		comm = "Excellent";
-	}
-	else if (currentStudent.percent >= 60)
-	{
-		currentStudent.grade = 'B';
-		comm = "Good";
-	}
-
-	else if (currentStudent.percent >= 40)
-	{
-		currentStudent.grade = 'C';
-		comm = "Fair";
-	}
-	else
-	{
-		currentStudent.grade = 'F';
-		comm = "Fail Do hard work..";
-	}
-}
 
 
 

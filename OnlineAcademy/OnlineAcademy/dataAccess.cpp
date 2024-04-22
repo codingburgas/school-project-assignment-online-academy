@@ -4,7 +4,7 @@
 // Function to find a student by name in the Scores.txt file
 bool findStudent(const std::string& name, student currentStudent)
 {
-    std::ifstream file("Scores.txt");
+    std::ifstream file("Results.txt");
     std::string line;
     while (getline(file, line))
     {
@@ -21,7 +21,7 @@ bool findStudent(const std::string& name, student currentStudent)
 // Function to update a student's score in the Scores.txt file
 void updateStudent(const student currentStudent)
 {
-    std::ifstream file("Scores.txt");
+    std::ifstream file("Results.txt");
     std::vector<std::string> lines;
     std::string line;
     while (getline(file, line))
@@ -33,7 +33,7 @@ void updateStudent(const student currentStudent)
         else
         {
             // Update the student's score in the line
-            lines.push_back(currentStudent.name + " " + std::to_string(currentStudent.score));
+            lines.push_back(currentStudent.name + std::to_string(currentStudent.score));
         }
     }
     file.close();

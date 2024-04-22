@@ -3,11 +3,13 @@
 #include "quiz.h"
 #include "quiz_10grade.h"
 
-bool updateScore(bool sequence) {
+bool updateScore(bool sequence) 
+{
 	return sequence;
 }
 
-void displayMenu(student currentStudent) {
+void displayMenu(student currentStudent) 
+{
 	system("CLS");
 
 	std::vector<std::string> menuOptions = { "Revision", "Start test", "Instructions", "Grades", "Exit" };
@@ -41,7 +43,7 @@ void startingScreen() {
 		std::cout << "\n\n\n\t\t\t\t This name is already used. Is that you? (y/n): ";
 		std::cin >> choice;
 		if (choice == 'y' || choice == 'Y') {
-			currentStudent->percent = 0;  // Resetting score if it's an existing user
+			currentStudent->per = 0;  // Resetting score if it's an existing user
 		}
 		else {
 			std::cout << "\n\n\n\t\t\t\t\t Please choose a different name: ";
@@ -53,7 +55,7 @@ void startingScreen() {
 		std::ofstream myfile("Scores.txt", std::ios::app);
 		currentStudent->score = 0;
 		myfile << std::left << std::setw(20) << currentStudent->name // Set a fixed width for the name
-			<< std::setw(10) << currentStudent->percent // Fixed width for percentage
+			<< std::setw(10) << currentStudent->per // Fixed width for percentage
 			<< std::setw(2) << currentStudent->grade << std::endl; // Fixed width for grade
 
 		myfile.close(); // Close the file after writing
@@ -171,7 +173,7 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
 					{
 						// Formatting the output for better readability
 						myfile << std::left << std::setw(20) << currentStudent.name // Set a fixed width for the name
-							<< std::setw(10) << currentStudent.percent // Fixed width for percentage
+							<< std::setw(10) << currentStudent.per // Fixed width for percentage
 							<< std::setw(2) << currentStudent.grade << std::endl; // Fixed width for grade
 
 						myfile.close(); // Close the file after writing
