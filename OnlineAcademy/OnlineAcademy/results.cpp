@@ -36,14 +36,13 @@ void student::getdata()
 	std::cin >> rollno;
 	std::cout << "\n\nEnter The Name of student ";
 	std::cin.ignore();
-	std::cin.getline(name, 50);
+	getline(std::cin, name);
 	system("cls");
 	quiz();
 	obt = point;
 
 	calculate();
 	system("cls");
-	Result();
 }
 
 void write_student()

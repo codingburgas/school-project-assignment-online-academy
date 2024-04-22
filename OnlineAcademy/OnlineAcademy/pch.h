@@ -27,13 +27,12 @@ public:
 	int point = 0;
 	int myarr = 0;
 	int rollno;
-	char name[50];
+	std::string name;
 	//void calculate();	//function to calculate grade
 	int obt;
 	double score;
 	const char* comm;
 	void calculate();	//function to calculate grade
-	void Result();
 	int alreadyTakenTest;
 	char grade;
 	double per;
