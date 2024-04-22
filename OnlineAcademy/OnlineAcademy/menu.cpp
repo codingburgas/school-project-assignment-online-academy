@@ -706,10 +706,6 @@ void menu(std::vector<std::string> menuOptions, student currentStudent)
 			case 3:
 			{
 				system("CLS");
-
-
-				std::vector<std::string> gradesOptions = { "Highest grade", "Students who passed the test", "Students who don't pass the test", "Back" };
-				system("CLS");
 				std::cout << "\t\t\t\t\t  ____  ____    ____  ___      ___  _____" << std::endl;
 				std::cout << "\t\t\t\t\t /    ||    \\  /    ||   \\    /  _]/ ___/" << std::endl;
 				std::cout << "\t\t\t\t\t|   __j|  D  )/  o  ||    \\  /  [_(   \\_ " << std::endl;
@@ -717,6 +713,10 @@ void menu(std::vector<std::string> menuOptions, student currentStudent)
 				std::cout << "\t\t\t\t\t|  |_ ||    \\ |  _  ||     ||   [_ /  \\ |" << std::endl;
 				std::cout << "\t\t\t\t\t|     ||  .  Y|  |  ||     ||     |\\    |" << std::endl;
 				std::cout << "\t\t\t\t\tl_____jl__j\\_jl__|__|l_____jl_____| \\___j" << std::endl;
+
+				std::vector<std::string> gradesOptions = { "Highest grade", "Students who passed the test", "Students who don't pass the test", "Back" };
+				system("CLS");
+				
 
 				if (subMenuGrades(gradesOptions, menuOptions))
 				{

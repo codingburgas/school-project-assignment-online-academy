@@ -89,7 +89,7 @@ void quiz_10grade(student currentStudent)
 				{
 
 					currentStudent.percent += 10;
-					std::cout << "\tCongratulation You selected right option";
+					std::cout << "\tCongratulation! You selected right option";
 				}
 				else
 				{

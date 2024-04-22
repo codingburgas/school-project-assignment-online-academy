@@ -80,10 +80,12 @@ void class_result()
 	std::cout << "==========================================================\n";
 	std::cout << "R.No          Name      Points     %      Grade" << std::endl;
 	std::cout << "==========================================================\n";
+
 	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(student)))
 	{
 		st.show_tabular();
 	}
+
 	std::cin.ignore();
 	std::cin.get();
 	inFile.close();
