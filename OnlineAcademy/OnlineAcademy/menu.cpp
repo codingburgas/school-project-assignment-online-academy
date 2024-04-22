@@ -43,7 +43,7 @@ void startingScreen() {
 		std::cout << "\n\n\n\t\t\t\t This name is already used. Is that you? (y/n): ";
 		std::cin >> choice;
 		if (choice == 'y' || choice == 'Y') {
-			currentStudent->per = 0;  // Resetting score if it's an existing user
+			currentStudent->score = 0;  // Resetting score if it's an existing user
 		}
 		else {
 			std::cout << "\n\n\n\t\t\t\t\t Please choose a different name: ";
@@ -55,7 +55,7 @@ void startingScreen() {
 		std::ofstream myfile("Scores.txt", std::ios::app);
 		currentStudent->score = 0;
 		myfile << std::left << std::setw(20) << currentStudent->name // Set a fixed width for the name
-			<< std::setw(10) << currentStudent->per // Fixed width for percentage
+			<< std::setw(10) << currentStudent->score // Fixed width for percentage
 			<< std::setw(2) << currentStudent->grade << std::endl; // Fixed width for grade
 
 		myfile.close(); // Close the file after writing
@@ -163,9 +163,8 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
 				break;
 			case 1:
 				system("CLS");
-				quiz_10grade(currentStudent);
-
-				if (!updateScore(currentStudent.alreadyTakenTest))
+				quiz_10grade();
+				/*				if (!updateScore(currentStudent.alreadyTakenTest))
 				{
 					std::ofstream myfile("Scores.txt", std::ios::app); // Append mode
 
@@ -173,12 +172,13 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
 					{
 						// Formatting the output for better readability
 						myfile << std::left << std::setw(20) << currentStudent.name // Set a fixed width for the name
-							<< std::setw(10) << currentStudent.per // Fixed width for percentage
+							<< std::setw(10) << currentStudent.score // Fixed width for percentage
 							<< std::setw(2) << currentStudent.grade << std::endl; // Fixed width for grade
 
 						myfile.close(); // Close the file after writing
 					}
-				}
+				}*/
+				break;
 
 			case 2:
 				system("CLS");

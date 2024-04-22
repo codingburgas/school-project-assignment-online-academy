@@ -24,7 +24,8 @@ struct question
 class student
 {
 public:
-	int point = 0;
+	int pointTenth = 0;
+	int pointNinth = 0;
 	int myarr = 0;
 	int rollno;
 	std::string name;
@@ -35,7 +36,6 @@ public:
 	void calculate();	//function to calculate grade
 	int alreadyTakenTest;
 	char grade;
-	double per;
 	void getdata();		//function to accept data from user
 	void showdata() const;	//function to show data on screen
 	void show_tabular() const;

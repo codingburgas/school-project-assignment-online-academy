@@ -1,12 +1,10 @@
-﻿  dataAccess.cpp
-  menu.cpp
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(98,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(105,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(120,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(127,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(316,18): warning C4129: '_': unrecognized character escape sequence
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(334,19): warning C4129: '_': unrecognized character escape sequence
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(493,19): warning C4129: '_': unrecognized character escape sequence
-C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(619,21): warning C4566: character represented by universal-character-name '\u03B3' cannot be represented in the current code page (1252)
+﻿  quiz_10grade.cpp
+  results.cpp
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(7,2): error C2065: 'per': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(7,8): error C2065: 'point': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(9,6): error C2065: 'per': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(14,11): error C2065: 'per': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(20,11): error C2065: 'per': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(34,2): error C2065: 'point': undeclared identifier
+C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(42,8): error C2065: 'point': undeclared identifier
   Generating Code...
-  OnlineAcademy.vcxproj -> C:\Users\YZIlcheva21\source\repos\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe

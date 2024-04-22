@@ -1,115 +1,202 @@
 #include "quiz_10grade.h"
-#include "quiz.h"
 
-void quiz_10grade(student currentStudent)
+int pointTenth = 0;
+
+int myarrTenth = 0;
+
+void student::show_tabular() const
+
 {
-	char a, b, e;
-	int i = 0;
-	int right = 0;
-	int wrong = 0;
-	char answers;
-	struct question abc[30];
-	int number = 0;
+
+	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << score << std::setw(6) << grade << std::endl;
+
+}
+
+void student::showdata() const {
+
+	std::cout << "\nRoll number of student: " << rollno;
+
+	std::cout << "\nName of student: " << name << std::endl;
+
+}
+
+void quiz()
+
+{
+
+	pointTenth = 0;
 
 
-	abc[0] = { "Which of the names listed is spelled correctly?","Union of Teachers in Bulgaria","Bulgarian State Railways","National Revenue Agency","United States of America",'c' };
-	abc[1] = { "Indicate the true statement. Endothermic processes:","occur with the absorption of heat and the final products are richer in energy than the starting substances","proceed with the absorption of heat and the final products are poorer in energy than the starting substances","proceed with the release of heat and the final products are richer in energy than the starting substances","proceed with the release of heat and the final products are poorer in energy than the starting substances",'b' };
-	abc[2] = { "Indicate the true statement. According to Hess's law, the thermal effect of a reaction depends on?","the initial state of the system","he final state of the system","the initial and final state of the system, as well as the intermediate stages of the reaction","the initial and final state of the system and does not depend on its intermediate stages",'c' };
-	abc[3] = { "Which sentence has a grammatical mistake?","So far only a few projects meet the requirements","And today, to my regret, after the end of the seminar in the club, I did not find anyone","Any of my friends will be able to give me the address of the foundation","The authors whose materials I reviewed today have really big ambitions.",'b' };
-	abc[4] = { "In which order are all the words spelled correctly? ","distracted, restless, sleepless","polite, no-nonsense, distance","major, nein, zoning","honesty, danger, selflessness",'b' };
-	abc[5] = { "Which sentence is NOT misspelled?","I'lluminated by the moon, the mountain shone like silver, the bare frozen forests darkened, its valleys and ravines gaped like pits, sunken in snow and breathing cold","In the evening, when the fog over the field cleared and the snow turned red from the sunset, the five wolves that lay in the sparse forest by the road set off for the mountain","She came from the end well, gilded the rings of the iron chain, bent over the bucket, wet her clear forehead and shook it violently in the air.","The plums turn red above the braids, and the yellow bells hang from the broad-leaved pumpkins,which ring, swayed by the meek song of the bees",'b' };
-	abc[6] = { "Which sentence has a punctuation error?","Thin, hot, they looked like twins - both were the same height, light brown, and their manes and tails were even lighter, almost white","Water could be heard rushing from the other side, torrents were flowing down through the bars, and in the village valley a whole river was now roaring - dim, wide, scary","Sometimes it rained, at first with thunder and wind, then settled, overthe field was covered with mist and the rain was falling softly and softly","The horizon was not visible, the massive and heavy outlines of mountains were not obstructed anywhere, there were no forests, no trees",'c' };
-	abc[7] = { "In which sentence is NOT a punctuation error?","On one side of the square was a dark building with a huge tree in the courtyard, probably a church, judging by its scabbard on the roof","The fifth turned into a long main street lined with houses, which led them to a poorly lit square","He saw a brown street jammed with cars and passers-by wearing dark coats","He got up, went to the door, found it unlocked and locked it",'d' };
-	abc[8] = { "In which of the sentences is the punctuation norm violated?","Both permanent and temporary exhibitions display the collected treasures","The museum, located on the territory of the monastery, has 35,000 exhibits","There are many collections, including icons and wood carvings and collections of manuscripts","However, it is not possible for visitors to the complex to see all the valuables",'c' };
-	abc[9] = { "In which of the sentences is a punctuation error made?","The frescoes and wood carvings in the monastery were painted and made by generations of painters and craftsmen","They have worked hard to give their best and have achieved a lot","From the 10th century, when it was founded, the temple was unwittingly destroyed and burned, after which it was rebuilt","The holy cloister acquired this appearance only when it was completely restored, which happened in the middle of the 20th century",'c' };
-	abc[10] = { "In which of the sentences is NOT a lexical error?","Kliment Ohridski founded a book school that trained clerics and grammarians","During the Revival, many were initiated into the cell school of Neophyte Rilski students","Many Bulgarians and revolutionaries, including Botev, lived in Bucharest at that time","The Rila Monastery is not only a religious and cultural monument, but also a historical shrine",'d' };
-	abc[11] = { "Which of the following qualities does not have quixote? ","courage","magnanimity","determination","kindness",'d' };
-	abc[12] = { "What a change in Sancho Pansa ? ","gets rich","is no longer a materialist","becomes more honest","forgets where he started from",'c' };
-	abc[13] = { "What is not the conflict in Hamlet?","conceptual","slaughtered","elevated","personal",'c' };
-	abc[14] = { "What is leading during Classicism?","the circus","to affect life such that,as it is","reason","striving for rapprochement with God",'c' };
-	abc[15] = { "Which of the following qualities does Orgone not possess?","trustworthiness","hypocrisy","naivety","blindness",'b' };
-	abc[16] = { "In which of the lines are the character and the work correctly related?","Kutsar - Indje","Gatyu - The Heroes","Bezportev - Under the yoke","Bojan - Tobacco",'d' };
-	abc[17] = { "In which of the lines are the work and its genre correctly related?","Story - a story","September - a lyrical cycle","Levski - ode","Cis moll - elegy",'b' };
-	abc[18] = { "Which work is characterized by the motif of the fog that has turned intoa metaphor for human life ?","Tobacco","Letter","Armenians","Winter evenings",'d' };
-	abc[19] = { "In which of the lines is indicated a phenomenon characteristic only of the post-war periodmodernism? ","expressionism","aesthetic individualism","symbolism","realism",'a' };
-	abc[20] = { "How many traits are tracked in a dihybrid cross?","one","three","two","more than three",'c' };
-	abc[21] = { "A person's gender is determined by?","the segmentation","fertilization","gastrulation","gametogenesis",'b' };
-	abc[22] = { "Anthropogenesis is a process of?","embryonic development of man","extinction of organisms due to human activity","origin and historical development of man","climate change due to human activity",'c' };
-	abc[23] = { "The rate of a chemical reaction in an irreversible process does NOT change when?","increasing the concentration of the reactant","decrease in product concentration","change in temperature of the system","adding a catalyst to the system",'b' };
-	abc[24] = { "Which of the following statements about enzymes is NOT true?","their activity is preserved at a very high temperature","are very sensitive","their action is influenced by the pH of the environment","can speed up only one process",'a' };
-	abc[25] = { "The dissolution of substances is?","a chemical process with a certain heat effect","always an endothermic process","a physicochemical process with a certain thermal effect","physical exothermic process",'c' };
-	abc[26] = { "Which of the given examples is a solution?","mineral water","distilled water","customs water","milk",'a' };
-	abc[27] = { "When organic substances are burned, CO2 is released. Which of the biological processes is important for the reduction of CO2 in nature?","sweet fruit fermentation","photosynthesis","putrefaction","breathing",'b' };
-	abc[28] = { "Name the faithful creation. Exothermic processes?","proceed with the absorption of heat and the final products are richer in energy than the starting substances","proceed with the absorption of heat and the final products are poorer in energy than the starting substances","proceed with the release of heat and the final products are richer in energy than the starting substances","proceed with the release of heat and the final products are poorer",'c' };
-	abc[29] = { "Which one of the following materials cannot be used to make a lens?","glass","plastic","clay","water",'c' };
+	char aTenth, bTenth, eTenth;
+
+	int iTenth = 0;
+
+	int rightTenth = 0;
+
+	int wrongTenth = 0;
+
+	char answersTenth;
+
+	struct question abcTenth[30];
+
+	int numberTenth = 0;
 
 
-	do {
-		if (number == i)
+	abcTenth[0] = { "Which of the political models is NOT characteristic of the New Age","socialism ","conservatism","authoritarianism","liberalism",'d' };
+
+	abcTenth[1] = { "During the period 1839 - 1876 in the Ottoman Empire was?","The Young Turk revolution","The Kemalist movement","the Tanzima era","the Eastern Question",'c' };
+
+	abcTenth[2] = { "The American Constitution of 1789 provides?","weak king and strong Parliament","weak government","monarchical rule","federalism and separation of powers",'d' };
+
+	abcTenth[3] = { "The Bulgarian revival begins?","at the beginning of the 18th century","at the beginning of the 19th century","with the writing of Slavic Bulgarian History","in the end of the 18th century",'c' };
+
+	abcTenth[4] = { "Power under absolutism is exercised by?","the parliament","the monarch","the aristocrats","the government",'b' };
+
+	abcTenth[5] = { "Which organic compound is a carbohydrate with reserve functions in the human body","starch","glucagon","glycogen","insulin",'b' };
+
+	abcTenth[6] = { "Oxygen in the blood is carried by the protein?","chitin","cholesterol","actin","hemoglobin",'d' };
+
+	abcTenth[7] = { "In a eukaryotic cell, DNA is located in?","the membrane","lysosomes","the cytoplasm","the nucleus",'d' };
+
+	abcTenth[8] = { "Erythrocytes, unlike leukocytes, have?","variable shape","smaller sizes","iron ions","cell nucleus",'b' };
+
+	abcTenth[9] = { "Endocrine control in the human body is carried out by?","enzymes","hormones","vitamins ","minerals",'c' };
+
+	abcTenth[10] = { "Compound X has a sweet taste and is used to make antifreeze. Substance X is:e","propane-1,2,3-triol ","ethane-1,2-diol","nitroglycerin","acetone",'b' };
+
+	abcTenth[11] = { "In which order are aldehyde, alcohol, ketone labeled consecutively?","CH3COCH3, C3H7OH, CH3CHO","CH3OH, CH3COCH3, CH3CHO","HCHO, C2H5OH, CH3COCH3","C2H5OH, HCHO, CH3COCH",'d' };
+
+	abcTenth[12] = { "In which order is a compound that reacts with Cu(OH)2 indicated","C3H5(OH)3, C3H7OH","CH3OH, CH3COCH3","C2H5OH, CH3OH","C3H7OH, CH3COCH3",'a' };
+
+	abcTenth[13] = { "Which combination NONE of the compounds add a hydrogen?","CH3COCH3, C3H5(OH)3, CH3CHO","C6H5OH, CH3COCH3, CH3CHO","CH3COOH, C3H5(OH)3, C2H5OH","CH3OH, CH3CHO, C2H5COCH3",'a' };
+
+	abcTenth[14] = { "What is the formula of lactic acid?","CH3CH(OH)COOH","C6H4(OH)COOH","C6H5COOH","CH3COOH",'a' };
+
+	abcTenth[15] = { "Which statement is NOT true about the Enlightenment?","Knowledge is largely subordinated by religion","The Enlightenment is the first era in which the idea of progress is inherent","Knowledge is thought of as attainable, systematic, and comprehensive","Reason dictates morality",'a' };
+
+	abcTenth[16] = { "Where does Grandpa Gorio take place?","in Petersburg","in Paris","in London","in Rouen",'b' };
+
+	abcTenth[17] = { "In which of the lines work and author are NOT correctly connected?","Madame Bovary - Gustave Flaubert","Gulliver's Travels - Jonathan Swift","Autumn Song - Charles Baudelaire","Don Juan - George Byron",'c' };
+
+	abcTenth[18] = { "In which of the lines are genre and work related correctly?","epic poem - Spleen","ballad - Stranger","a novel in verse - Grandfather Gorio","elegy - Your mother",'d' };
+
+	abcTenth[19] = { "In which of the lines are character and work related correctly??","Vautrin - Grandfather Goriot","Tatyana - The Spring of the White Leg","Emma - Gulliver's Travels","Rastinyak - Autumn Song",'a' };
+
+	abcTenth[20] = { "Before doing the first commit,which of the following Git commands must be run?","git add","git init","git reset","git ad",'a' };
+
+	abcTenth[21] = { "What is the command to get the installed version of Git?","getGitVersion","git -version","git --version","git help version",'c' };
+
+	abcTenth[22] = { "Omitting semicolon at the end of a statement is called","Logical error","Execution time error","Syntax error","Run time error",'c' };
+
+	abcTenth[23] = { "del command is used to?","Delete directory","Delete labels","None of above","Delete files",'d' };
+
+	abcTenth[24] = { "What is the purpose of using breakpoints during execution of a program?","Memory management","Syntax checking","Intentionally crashing the program","Debugging",'d' };
+
+	abcTenth[25] = { "What is the command to set the user email for the current repository?","git email.user","git config user.email","git config email","git config",'b' };
+
+	abcTenth[26] = { "Which of the following command is used to view the content of any file?","TYPE","VIEW","REN","LS",'a' };
+
+	abcTenth[27] = { "I would use what command to get a list of files and folders?","cd","dir","mkdir","ls",'b' };
+
+	abcTenth[28] = { "Writing a code that prevents a program from a runtime crash is called?","Syntax checking","Breakpointing","Exception handling","Error correcting code",'c' };
+
+	abcTenth[29] = { "Which keyword is used to handle the expection?","handler","catch","throw","try",'b' };
+
+	do
+
+	{
+
+		if (numberTenth == iTenth)
+
 		{
+
 			system("cls");
 
-			number++;
-			b = ' ';
-			e = ' ';
-			answers = abc[i].yourAnswer;
+			numberTenth++;
 
-			std::cout << "Question " << number << ") " << std::endl;
+			bTenth = ' ';
 
-			std::cout << abc[i].questions << std::endl;
+			eTenth = ' ';
+
+			answersTenth = abcTenth[iTenth].yourAnswer;
+
+			std::cout << "Question " << numberTenth << ") " << std::endl;
+
+			std::cout << abcTenth[iTenth].questions << std::endl;
 
 
-			std::cout << " a - " << abc[i].answer1 << std::endl;
+			std::cout << " a - " << abcTenth[iTenth].answer1 << std::endl;
 
-			std::cout << " b - " << abc[i].answer2 << std::endl;
+			std::cout << " b - " << abcTenth[iTenth].answer2 << std::endl;
 
-			std::cout << " c - " << abc[i].answer3 << std::endl;
+			std::cout << " c - " << abcTenth[iTenth].answer3 << std::endl;
 
-			std::cout << " d - " << abc[i].answer4 << std::endl;
+			std::cout << " d - " << abcTenth[iTenth].answer4 << std::endl;
 
-			std::cout << "\n Press Enter to skip " << std::endl;
+			std::cout << " Press Enter to skip " << std::endl;
 
-			std::cout << " Select your Option ==> ";
-
+			std::cout << "\t Select your Option ==> ";
 
 		}
 
 		if (_kbhit())
+
 		{
-			a = _getch();
+
+			aTenth = _getch();
+
 			//cin>>a;
-			std::cout << a;
 
-			if (int(a) == 13)
+			std::cout << aTenth;
+
+			if (int(aTenth) == 13)
+
 			{
+
 				std::cout << "\tYou skipped this Question";
+
 			}
+
 			else
+
 			{
-				if (a == answers)
+
+				if (aTenth == answersTenth)
+
 				{
 
-					currentStudent.per += 10;
-					std::cout << "\tCongratulation! You selected right option";
+					pointTenth += 10;
+
+					std::cout << "\tCongratulation You selected right option";
+
 				}
+
 				else
+
 				{
 
-					std::cout << "\tCorrect Option is  ==> " << answers;
+					std::cout << "\tCorrect Option is  ==> " << answersTenth;
 
 					std::cout << "\tYou selected wrong option.";
 
 				}
+
 			}
+
 			_getch();
-			i++;
+
+			iTenth++;
+
 		}
-	} while (i < 30);
+
+	} while (iTenth < 30);
+
+	std::cout << "\nYou have " << pointTenth << " points" << std::endl;
+
+	_getch();
+
+	system("CLS");
+
 
 }
-
-
-
-
-
 

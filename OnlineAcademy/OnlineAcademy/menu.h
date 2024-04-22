@@ -1,6 +1,7 @@
 #pragma once
 #include"pch.h"
 #include "quiz.h"
+#include "quiz_10grade.h"
 
 // Function to display the starting screen and handle user input for name entry and checking for existing students
 void startingScreen();
