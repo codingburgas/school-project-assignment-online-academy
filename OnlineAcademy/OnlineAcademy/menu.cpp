@@ -3,11 +3,13 @@
 #include "quiz.h"
 #include "quiz_10grade.h"
 
+//Updates the score based on the sequence
 bool updateScore(bool sequence) 
 {
 	return sequence;
 }
 
+//Displays the menu options for the student
 void displayMenu(student currentStudent) 
 {
 	system("CLS");
@@ -17,6 +19,7 @@ void displayMenu(student currentStudent)
 	menu(menuOptions, currentStudent);
 }
 
+//Displays the starting screen for the quiz
 void startingScreen() {
 	student* currentStudent = new student();
 	std::cout << "\t\t\t\t __    __    ___  _         __   ___   ___ ___    ___ \n";

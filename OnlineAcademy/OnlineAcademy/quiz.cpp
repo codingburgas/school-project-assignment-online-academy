@@ -2,6 +2,7 @@
 
 int pointNinth = 0;
 
+//Conducts a quiz for 9th-grade students
 void quiz()
 {
 	pointNinth = 0;

@@ -1,6 +1,7 @@
 #include "results.h"
 #include "quiz.h"
 
+//Writes student data to a binary file
 void write_student()
 {
 	student st;
@@ -14,10 +15,7 @@ void write_student()
 	std::cin.get();
 }
 
-
-//function to read all records from file
-
-
+//Function to read all records from file
 void display_all()
 {
 	student st;
@@ -42,9 +40,7 @@ void display_all()
 
 
 
-//function to display all students grade report
-
-
+//Function to display all students grade report
 void class_result()
 {
 	student st;

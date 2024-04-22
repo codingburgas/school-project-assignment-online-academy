@@ -2,6 +2,7 @@
 
 int pointTenth = 0;
 
+//Conducts a quiz for 10th-grade students
 void quiz_10grade()
 
 {
