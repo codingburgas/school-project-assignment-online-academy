@@ -2,46 +2,22 @@
 
 int pointTenth = 0;
 
-int myarrTenth = 0;
-
-void student::show_tabular() const
-
-{
-
-	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << score << std::setw(6) << grade << std::endl;
-
-}
-
-void student::showdata() const {
-
-	std::cout << "\nRoll number of student: " << rollno;
-
-	std::cout << "\nName of student: " << name << std::endl;
-
-}
-
-void quiz()
+void quiz_10grade()
 
 {
 
 	pointTenth = 0;
-
-
 	char aTenth, bTenth, eTenth;
-
 	int iTenth = 0;
-
-	int rightTenth = 0;
-
+    int rightTenth = 0;
 	int wrongTenth = 0;
-
 	char answersTenth;
 
 	struct question abcTenth[30];
 
 	int numberTenth = 0;
-
-
+	int  grade;
+	//add the questions for 10 grade
 	abcTenth[0] = { "Which of the political models is NOT characteristic of the New Age","socialism ","conservatism","authoritarianism","liberalism",'d' };
 
 	abcTenth[1] = { "During the period 1839 - 1876 in the Ottoman Empire was?","The Young Turk revolution","The Kemalist movement","the Tanzima era","the Eastern Question",'c' };
@@ -107,17 +83,11 @@ void quiz()
 	{
 
 		if (numberTenth == iTenth)
-
 		{
-
-			system("cls");
-
+            system("cls");
 			numberTenth++;
-
 			bTenth = ' ';
-
 			eTenth = ' ';
-
 			answersTenth = abcTenth[iTenth].yourAnswer;
 
 			std::cout << "Question " << numberTenth << ") " << std::endl;
@@ -126,57 +96,37 @@ void quiz()
 
 
 			std::cout << " a - " << abcTenth[iTenth].answer1 << std::endl;
-
 			std::cout << " b - " << abcTenth[iTenth].answer2 << std::endl;
-
 			std::cout << " c - " << abcTenth[iTenth].answer3 << std::endl;
-
 			std::cout << " d - " << abcTenth[iTenth].answer4 << std::endl;
-
 			std::cout << " Press Enter to skip " << std::endl;
-
 			std::cout << "\t Select your Option ==> ";
 
 		}
 
 		if (_kbhit())
-
-		{
+        {
 
 			aTenth = _getch();
-
-			//cin>>a;
-
 			std::cout << aTenth;
-
 			if (int(aTenth) == 13)
-
 			{
-
 				std::cout << "\tYou skipped this Question";
-
 			}
 
 			else
-
-			{
-
+            {
+				//check the answers
 				if (aTenth == answersTenth)
-
 				{
 
 					pointTenth += 10;
-
 					std::cout << "\tCongratulation You selected right option";
-
 				}
 
 				else
-
 				{
-
 					std::cout << "\tCorrect Option is  ==> " << answersTenth;
-
 					std::cout << "\tYou selected wrong option.";
 
 				}
@@ -190,13 +140,33 @@ void quiz()
 		}
 
 	} while (iTenth < 30);
+	//add grading system
+	pointTenth = pointTenth * 100 / 300;
+	std::cout << "\n\nYou have: " << pointTenth << " percents" << std::endl;
+	//student percents
+	
+	if (pointTenth >= 80)
+	{
+		std::cout << "Your grade is: A";
 
-	std::cout << "\nYou have " << pointTenth << " points" << std::endl;
+	}
+	else if (pointTenth >= 60)
+	{
+		std:: cout << "Your grade is: B";
+		
+	}
+	else if (pointTenth >= 40)
+	{
+		std::cout << "Your grade is: C";
+		
+	}
+	else
+	{
+		std:: cout << "Your grade is: F";
+		
+	}
 
 	_getch();
-
-	system("CLS");
-
-
+    system("CLS");
 }
 

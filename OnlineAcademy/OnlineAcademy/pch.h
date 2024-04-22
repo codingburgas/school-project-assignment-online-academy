@@ -33,10 +33,7 @@ public:
 	int obt;
 	double score;
 	const char* comm;
-	void calculate();	//function to calculate grade
+	//void calculate();	//function to calculate grade
 	int alreadyTakenTest;
 	char grade;
-	void getdata();		//function to accept data from user
-	void showdata() const;	//function to show data on screen
-	void show_tabular() const;
 };

@@ -1,10 +1,15 @@
-﻿  quiz_10grade.cpp
-  results.cpp
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(7,2): error C2065: 'per': undeclared identifier
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(7,8): error C2065: 'point': undeclared identifier
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(9,6): error C2065: 'per': undeclared identifier
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(14,11): error C2065: 'per': undeclared identifier
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(20,11): error C2065: 'per': undeclared identifier
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(34,2): error C2065: 'point': undeclared identifier
-C:\Users\PC\Downloads\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\results.cpp(42,8): error C2065: 'point': undeclared identifier
+﻿  dataAccess.cpp
+  menu.cpp
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(93,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(100,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(115,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(122,24): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(226,18): warning C4129: '_': unrecognized character escape sequence
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(244,19): warning C4129: '_': unrecognized character escape sequence
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(403,19): warning C4129: '_': unrecognized character escape sequence
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(526,21): warning C4566: character represented by universal-character-name '\u00F6' cannot be represented in the current code page (1251)
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(528,21): warning C4566: character represented by universal-character-name '\u00F6' cannot be represented in the current code page (1251)
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(529,21): warning C4566: character represented by universal-character-name '\u03B3' cannot be represented in the current code page (1251)
+C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\OnlineAcademy\menu.cpp(530,21): warning C4566: character represented by universal-character-name '\u00F6' cannot be represented in the current code page (1251)
   Generating Code...
+  OnlineAcademy.vcxproj -> C:\Users\alexz\Documents\GitHub\school-project-assignment-online-academy\OnlineAcademy\x64\Debug\OnlineAcademy.exe

@@ -2,46 +2,18 @@
 
 int pointNinth = 0;
 
-int myarr = 0;
-
-void student::show_tabular() const
-
-{
-
-	std::cout << rollno << std::setw(15) << name << std::setw(10) << obt << std::setw(10) << score << std::setw(6) << grade << std::endl;
-
-}
-
-void student::showdata() const {
-
-	std::cout << "\nRoll number of student: " << rollno;
-
-	std::cout << "\nName of student: " << name << std::endl;
-
-}
-
 void quiz()
-
 {
-
 	pointNinth = 0;
-
-
 	char a, b, e;
-
 	int i = 0;
-
 	int right = 0;
-
 	int wrong = 0;
-
 	char answers;
-
 	struct question abc[30];
+    int number = 0;
 
-	int number = 0;
-
-
+	//Add questions for 9 grade
 	abc[0] = { "Which of the political models is NOT characteristic of the New Age","socialism ","conservatism","authoritarianism","liberalism",'d' };
 
 	abc[1] = { "During the period 1839 - 1876 in the Ottoman Empire was?","The Young Turk revolution","The Kemalist movement","the Tanzima era","the Eastern Question",'c' };
@@ -103,96 +75,87 @@ void quiz()
 	abc[29] = { "Which keyword is used to handle the expection?","handler","catch","throw","try",'b' };
 
 	do
-
 	{
 
 		if (number == i)
-
 		{
-
 			system("cls");
-
 			number++;
-
 			b = ' ';
-
 			e = ' ';
-
 			answers = abc[i].yourAnswer;
-
 			std::cout << "Question " << number << ") " << std::endl;
 
 			std::cout << abc[i].questions << std::endl;
 
-
 			std::cout << " a - " << abc[i].answer1 << std::endl;
-
 			std::cout << " b - " << abc[i].answer2 << std::endl;
-
 			std::cout << " c - " << abc[i].answer3 << std::endl;
-
 			std::cout << " d - " << abc[i].answer4 << std::endl;
-
 			std::cout << " Press Enter to skip " << std::endl;
-
 			std::cout << "\t Select your Option ==> ";
-
 		}
 
 		if (_kbhit())
-
 		{
-
 			a = _getch();
-
-			//cin>>a;
-
 			std::cout << a;
 
 			if (int(a) == 13)
-
 			{
-
 				std::cout << "\tYou skipped this Question";
-
 			}
 
 			else
-
 			{
-
-				if (a == answers)
-
+				//check the answers
+                if (a == answers)
 				{
-
 					pointNinth += 10;
-
 					std::cout << "\tCongratulation You selected right option";
-
 				}
 
 				else
-
 				{
 
 					std::cout << "\tCorrect Option is  ==> " << answers;
-
 					std::cout << "\tYou selected wrong option.";
 
 				}
 
 			}
-
 			_getch();
-
 			i++;
 
 		}
 
 	} while (i < 30);
 
-	std::cout << "\nYou have " << pointNinth << " points" << std::endl;
 
+	//add grading system
+	pointNinth = pointNinth * 100 / 300;
+	std::cout << "\nYou have: " << pointNinth << " percents" << std::endl;
+	//students result
+	if (pointNinth >= 80)
+	{
+		std::cout << "Your grade is: A";
+
+	}
+	else if (pointNinth >= 60)
+	{
+		std::cout << "Your grade is: B";
+
+	}
+	else if (pointNinth >= 40)
+	{
+		std::cout << "Your grade is: C";
+
+	}
+	else
+	{
+		std::cout << "Your grade is: F";
+
+	}
 	_getch();
 
 	system("CLS");

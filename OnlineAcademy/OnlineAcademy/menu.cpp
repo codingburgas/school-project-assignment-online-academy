@@ -12,15 +12,7 @@ void displayMenu(student currentStudent)
 {
 	system("CLS");
 
-	std::vector<std::string> menuOptions = { "Revision", "Start test", "Instructions", "Grades", "Exit" };
-
-	std::cout << " ___ ___   ____  ____  ____       ___ ___    ___  ____   __ __ " << std::endl;
-	std::cout << "|   T   | /    Tl    j|    \\     |   T   |  /  _]|    \\ |  T  |" << std::endl;
-	std::cout << "| _   _ |/  o  | |  | |  _  \\    | _   _ | /  [_ |  _  \\|  |  |" << std::endl;
-	std::cout << "|  \\_/  ||     | |  | |  |  |    |  \\_/  |/    _]|  |  ||  |  |" << std::endl;
-	std::cout << "|   |   ||  _  | |  | |  |  |    |   |   ||   [_ |  |  ||  |  |" << std::endl;
-	std::cout << "|   |   ||  |  | j  l |  |  |    |   |   ||     ||  |  |l     |" << std::endl;
-	std::cout << "l___j___jl__j__j|____jl__|__j    l___j___jl_____jl__j__j \\__,_j" << std::endl;
+	std::vector<std::string> menuOptions = { "Revision", "Start test", "Instructions", "Exit" };
 
 	menu(menuOptions, currentStudent);
 }
@@ -38,19 +30,22 @@ void startingScreen() {
 	std::cout << "\n\n\n\t\t\t\t Enter your name before starting the quiz: ";
 	std::cin >> currentStudent->name;
 
-	if (findStudent(currentStudent->name, *currentStudent)) {
+	if (findStudent(currentStudent->name, *currentStudent)) 
+	{
 		char choice;
 		std::cout << "\n\n\n\t\t\t\t This name is already used. Is that you? (y/n): ";
 		std::cin >> choice;
 		if (choice == 'y' || choice == 'Y') {
 			currentStudent->score = 0;  // Resetting score if it's an existing user
 		}
-		else {
+		else 
+		{
 			std::cout << "\n\n\n\t\t\t\t\t Please choose a different name: ";
 			std::cin >> currentStudent->name;
 		}
 	}
-	else {
+	else 
+	{
 		// New student, adding to the file with a placeholder score
 		std::ofstream myfile("Scores.txt", std::ios::app);
 		currentStudent->score = 0;
@@ -164,20 +159,6 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
 			case 1:
 				system("CLS");
 				quiz_10grade();
-				/*				if (!updateScore(currentStudent.alreadyTakenTest))
-				{
-					std::ofstream myfile("Scores.txt", std::ios::app); // Append mode
-
-					if (myfile) // Check if the file is successfully opened
-					{
-						// Formatting the output for better readability
-						myfile << std::left << std::setw(20) << currentStudent.name // Set a fixed width for the name
-							<< std::setw(10) << currentStudent.score // Fixed width for percentage
-							<< std::setw(2) << currentStudent.grade << std::endl; // Fixed width for grade
-
-						myfile.close(); // Close the file after writing
-					}
-				}*/
 				break;
 
 			case 2:
@@ -191,77 +172,6 @@ bool subMenuStartTest(std::vector<std::string> subMenuStartTestOptions, std::vec
 	return false;
 }
 
-
-// Function to handle the "Grades" submenu
-bool subMenuGrades(std::vector<std::string> subMenuGradesOptions, std::vector<std::string> menuOptions)
-{
-
-
-	int selectedOption = 0;
-	char pressedKey = ' ';
-
-	system("CLS"); // Clear the screen
-
-
-
-	printSubMenuOptions(subMenuGradesOptions, selectedOption);
-
-	while (true)
-	{
-		pressedKey = _getch();
-
-		// Moving up through the submenu
-		if (selectedOption != 0 && pressedKey == (char)72)
-		{
-			selectedOption--;
-		}
-
-		// Moving down through the submenu
-		if (selectedOption != subMenuGradesOptions.size() - 1 && pressedKey == (char)80)
-		{
-			selectedOption++;
-		}
-
-		system("CLS"); // Clear the screen
-
-		printSubMenuOptions(subMenuGradesOptions, selectedOption);
-
-		// Choosing submenu option
-		if (pressedKey == '\r')
-		{
-			switch (selectedOption)
-			{
-				// Option 1
-			case 0:
-				system("CLS");
-				// Implement displaying highest grade functionality
-				break;
-
-				// Option 2
-			case 1:
-				system("CLS");
-				std::cout << "Displaying students who passed the test." << std::endl;
-				// Implement displaying students who passed the test functionality
-				break;
-
-				// Option 3
-			case 2:
-				system("CLS");
-				std::cout << "Displaying students who don't pass the test." << std::endl;
-				// Implement displaying students who don't pass the test functionality
-				break;
-
-				// Back
-			case 3:
-				system("CLS");
-				return true; // Return to main menu
-
-			default:
-				break;
-			}
-		}
-	}
-}
 
 // Function to display the main menu and handle user input
 void menu(std::vector<std::string> menuOptions, student currentStudent)
@@ -704,31 +614,8 @@ void menu(std::vector<std::string> menuOptions, student currentStudent)
 				}
 				break;
 
-				// Grades
-			case 3:
-			{
-				system("CLS");
-				std::cout << "\t\t\t\t\t  ____  ____    ____  ___      ___  _____" << std::endl;
-				std::cout << "\t\t\t\t\t /    ||    \\  /    ||   \\    /  _]/ ___/" << std::endl;
-				std::cout << "\t\t\t\t\t|   __j|  D  )/  o  ||    \\  /  [_(   \\_ " << std::endl;
-				std::cout << "\t\t\t\t\t|  |  ||    / |     ||  D  \\/    _]\\__  |" << std::endl;
-				std::cout << "\t\t\t\t\t|  |_ ||    \\ |  _  ||     ||   [_ /  \\ |" << std::endl;
-				std::cout << "\t\t\t\t\t|     ||  .  Y|  |  ||     ||     |\\    |" << std::endl;
-				std::cout << "\t\t\t\t\tl_____jl__j\\_jl__|__|l_____jl_____| \\___j" << std::endl;
-
-				std::vector<std::string> gradesOptions = { "Highest grade", "Students who passed the test", "Students who don't pass the test", "Back" };
-				system("CLS");
-				
-
-				if (subMenuGrades(gradesOptions, menuOptions))
-				{
-					displayMenu = true; // Display main menu after returning from submenu
-				}
-			}
-			break;
-
 			// Exit
-			case 4:
+			case 3:
 
 				exitStatement = false;
 				system("CLS");
