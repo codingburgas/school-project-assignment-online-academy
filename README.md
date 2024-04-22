@@ -42,6 +42,7 @@
 
 
 ## 📃 Documentation
-- ### [Presentation](https://github.com/codingburgas/school-project-assignment-online-academy/blob/main/Documentation/Documentation.docx)
-- ### [Documentation](https://github.com/codingburgas/school-project-assignment-online-academy/blob/main/Documentation/Presentation.pptx)
+- ### [Presentation](https://github.com/codingburgas/school-project-assignment-online-academy/blob/main/Documentation/Presentation.pptx)
+- ### [Documentation](https://github.com/codingburgas/school-project-assignment-online-academy/blob/main/Documentation/Documentation.docx)
+
 																	 
