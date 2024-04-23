@@ -26,14 +26,9 @@ class student
 public:
 	int pointTenth = 0;
 	int pointNinth = 0;
-	int myarr = 0;
-	int rollno;
 	std::string name;
 	//void calculate();	//function to calculate grade
-	int obt;
 	double score;
-	const char* comm;
-	//void calculate();	//function to calculate grade
 	int alreadyTakenTest;
 	char grade;
 };
